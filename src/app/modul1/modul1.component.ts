@@ -32,13 +32,11 @@ export class Modul1Component implements OnInit {
   text20 = `EBM`;
   text21 = `BÄK`;
   text22 = `BPtK`;
+  text23 = `GOÄ`;
+  text24 = `KHZG`;
+  text25 = `IMD`;
 
   constructor() {}
 
   ngOnInit(): void {}
-
-  scrollToIdRef(element:any): void {
-
-    element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-}
 }
