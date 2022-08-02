@@ -1,9 +1,5 @@
 <div class="modul1-container">
   <h1>Modul-1</h1>
-  <a [routerLink]="['/modul1']" [queryParams]="{ debug: true }" fragment="test">
-    link to user component
-  </a>
-  <a href="#test">test</a>
   <div class="header">
     <h2>Die Landkarte im Gesundheitswesen</h2>
   </div>
@@ -151,4 +147,311 @@
     <li>Informationen zur Verteilung der Corona Schutzimpfung.</li>
   </ul>
 </div>
-<div id="test"><span>test</span></div>
+
+<div class="kv-container">
+  <div class="text-container">
+    <span
+      >Es gibt Unterschiede zwischen der gesetzlichen und der privaten
+      Krankenversicherung
+      <span [innerHtml]="text10 | highlighter: searchText:'full'"></span>
+      &
+      <span [innerHtml]="text11 | highlighter: searchText:'full'"></span
+    ></span>
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche1/Tag3/Landkarte
+      im Gesundheitswesen Teil-1/Folie 16 bis 28.</span
+    >
+  </div>
+  <div class="discriptions">
+    <span [innerHtml]="text10 | highlighter: searchText:'full'"></span>
+    <p>
+      Aufgabe:Gewährleistung eines Versicherungsschutzes derjenigen, die nicht
+      gesetzlich versichert sind.
+    </p>
+    <span class="warn">Rechtsform:Öffentlich-rechtlich.</span>
+  </div>
+  <div class="discriptions">
+    <span [innerHtml]="text11 | highlighter: searchText:'full'"></span>
+    <p>
+      Aufgabe:Laut Sozialgesetzbuch “Gesundheit der Versicherten zu erhalten,
+      wiederherzustellen oder ihren Gesundheitszustand zu bessern”.
+    </p>
+    <span class="warn">Rechtsform:Privatwirtschaftlich.</span>
+  </div>
+
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Auch in der Art und Weise der Abrechnung sind Unterschiede zwischen der
+      <span [innerHtml]="text10 | highlighter: searchText:'full'"></span> und
+      <span [innerHtml]="text11 | highlighter: searchText:'full'"></span>
+      vorhanden.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der privat Versicherte hat andere Zugänge zu Ärzten als der gesetzlich
+      Versicherte.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Das
+      <span [innerHtml]="text12 | highlighter: searchText:'full'"></span> ist
+      die gesetzliche Grundlage der vertragsärztlichen Versorgung.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der
+      <span [innerHtml]="text13 | highlighter: searchText:'full'"></span>
+      bündelt und steuert die Finanzströme der gesetzlichen Krankenkassen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der morbiditätsorientierte Risikostrukturausgleich (
+      <span [innerHtml]="text14 | highlighter: searchText:'full'"></span> )
+      schafft einen finanziellen Ausgleich zwischen den Kassen, die
+      benachteiligt sind.
+    </span>
+  </div>
+
+  <div class="text-container">
+    <span>In Deutschland gilt das Prinzip der Selbstverwaltung.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Tragende Organisationsprinzip in der gesetzlichen Krankenversicherung.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Vorgabe der gesetzlichen Rahmenbedingungen und Aufgaben durch den Staat.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Dennoch: die Träger des Gesundheitswesens, die Versicherten und die
+      Arbeitgeber organisieren sich selbst, um das Gesundheitssystem zu steuern
+      und mitzugestalten .
+    </span>
+  </div>
+  <div class="text-container">
+    <span
+      >Der gemeinsame Bundesausschuss
+      <span [innerHtml]="text15 | highlighter: searchText:'full'"></span>
+      fungiert als oberstes Beschlussgremium der gemeinsamen
+      Selbstverwaltung.</span
+    >
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche1/Tag4/Landkarte
+      im Gesundheitswesen Teil-2/Folie 13 bis 16.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Aufgaben des
+      <span [innerHtml]="text15 | highlighter: searchText:'full'"></span> sind
+      im
+      <span [innerHtml]="text12 | highlighter: searchText:'full'"></span>
+      festgelegt.
+    </span>
+  </div>
+  <div class="text-container">
+    <span
+      >Die gemeinsame Selbstverwaltung setzt sich aus zahlreichen Mitgliedern
+      zusammen.</span
+    >
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche1/Tag4/Landkarte
+      im Gesundheitswesen Teil-2/Folie 17 bis 20.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Kassenärztliche Bundesvereinigung (<span
+        [innerHtml]="text16 | highlighter: searchText:'full'"
+      ></span
+      >).
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Deutsche Krankenhausgesellschaft (
+      <span [innerHtml]="text17 | highlighter: searchText:'full'"></span>).
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Kassenzahnärztliche Bundesvereinigung (<span
+        [innerHtml]="text18 | highlighter: searchText:'full'"
+      ></span
+      >) .
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Spitzenverband Bund der Krankenkassen (<span
+        [innerHtml]="text19 | highlighter: searchText:'full'"
+      ></span
+      >-Spitzenverband).
+    </span>
+  </div>
+  <div class="text-container">
+    <span>In Deutschland gibt es 17 Kassenärztliche Vereinigungen.</span>
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche1/Tag4/Landkarte
+      im Gesundheitswesen Teil-2/Folie 22 bis 28.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die KVen stellen die ambulante Versorgung der gesetzlich Versicherten
+      sicher.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Bedarfsplanung ist ein wesentliches Instrument zur Sicherstellung der
+      ambulanten Versorgung.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Planungsbereiche können offen oder gesperrt sein.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Kostendämmung im Gesundheitswesen spielt bei der Bedarfsplanung eine
+      wesentliche Rolle .</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Abrechnung von Leistungen kann über den Einheitlichen
+      Bewertungsmaßstab (<span
+        [innerHtml]="text20 | highlighter: searchText:'full'"
+      ></span
+      >) einheitliche Bewertungsmaßstab erfolgen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Abrechnung der Leistungen erfolgt einmal im Quartal nach dem (<span
+        [innerHtml]="text20 | highlighter: searchText:'full'"
+      ></span
+      >) einheitliche Bewertungsmaßstab mit der Kassenärztlichen
+      Vereinigung.</span
+    >
+  </div>
+  <div class="text-container">
+    <span>Berufsständige Organisationen.</span>
+  </div>
+  <div class="title">
+    <span
+      >Die Bundesärztekammer (<span
+        [innerHtml]="text21 | highlighter: searchText:'full'"
+      ></span
+      >)</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Bundesärztekammer vertritt die Interessen der Ärztinnen und Ärzte in
+      Deutschland.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Bundesärztekammer (
+      <span [innerHtml]="text21 | highlighter: searchText:'full'"></span> )
+      vertritt die Interessen der Ärztinnen und Ärzte in Deutschland.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>Als Arbeitsgemeinschaft der 17 deutschen Ärztekammern:</h3>
+      <ul>
+        <li>
+          Mitwirkung am gesundheitspolitischen Meinungsbildungsprozess der
+          Gesellschaft.
+        </li>
+        <li>
+          Entwicklung von Perspektiven für eine bürgernahe Gesundheits- und
+          Sozialpolitik.
+        </li>
+        <li>Seit 1873: Jährliche Hauptversammlung - Der Deutsche Ärztetag.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der Ärztetag 2018 in Erfurt hat das Verbot der ausschließlichen
+      Fernbehandlung gelockert.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Ärztekammer wirkt an der Gesetzgebung auf dem Gebiet des öffentlichen
+      Gesundheitswesens mit.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>Weitere Aufgaben:</h3>
+      <ul>
+        <li>
+          Förderung der ärztlichen Ausbildung und Fortbildung.
+        </li>
+        <li>
+          Erhalt eines wissenschaftlich hochstehenden Ärztestandes.
+        </li>
+        <li>Ordnung der ärztlichen Berufspflichten und Weiterbildung.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="title">
+    <span
+      >Die Bundespsychotherapeutenkammer (<span
+        [innerHtml]="text22 | highlighter: searchText:'full'"
+      ></span
+      >)</span
+    >
+  </div>
+</div>

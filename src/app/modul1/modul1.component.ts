@@ -18,8 +18,20 @@ export class Modul1Component implements OnInit {
   text6 = `DIVI`;
   text7 = `IQWiG`;
   text8 = `BfArM`;
-  text9 = `Paul Ehrlich Institut und Das BfArM`
-  description1 = ``;
+  text9 = `Paul Ehrlich Institut und Das BfArM`;
+  text10 = `Private Krankenversischerung ( PKV )`;
+  text11 = `Gesetzliche Krankenversicherung ( GKV )`;
+  text12 = `SGB V`;
+  text13 = `Gesundheitsfond`;
+  text14 = `Morbi RSA`;
+  text15 = `GBA`;
+  text16 = `KBV`;
+  text17 = `DKG`;
+  text18 = `KZBV`;
+  text19 = `GKV`;
+  text20 = `EBM`;
+  text21 = `BÄK`;
+  text22 = `BPtK`;
 
   constructor() {}
 

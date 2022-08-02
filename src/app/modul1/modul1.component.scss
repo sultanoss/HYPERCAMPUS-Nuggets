@@ -34,8 +34,7 @@ body {
 }
 ::ng-deep .highlighted-text {
   background-color: yellow;
-  padding: 16px;
-  border-radius: 16px;
+  padding: 2px;
   color: black;
 }
 
@@ -64,11 +63,12 @@ body {
   color: #3d3d3d;
   border-radius: 16px;
   padding: 16px;
-  width: 67%;
-  background: hsl(211deg 82% 55%);
+  width: 90%;
+  background: #2eeae6;
   color: black;
   font-size: 18px;
   align-self: center;
+  margin-bottom: 16px;
 }
 
 .text-container2 {
@@ -89,7 +89,6 @@ body {
 .akteure {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 32px;
   margin-bottom: 32px;
   flex-wrap: wrap;
 }
@@ -137,7 +136,67 @@ body {
     margin-top: 16px;
     color: white;
   }
-  li{
+  li {
     font-weight: bold;
   }
+  p {
+    font-weight: bold;
+    margin-left: 16px;
+  }
+}
+
+.kv-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  .warn {
+    background: #ff370a;
+    color: black;
+  }
+}
+
+.ps {
+  display: flex;
+  margin-bottom: 32px;
+  font-weight: bold;
+  align-items: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  word-break: break-word;
+
+  img {
+    margin-right: 10px;
+  }
+}
+
+.more-infos {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 16px;
+  width: 80%;
+
+  img {
+    margin-right: 10px;
+  }
+}
+
+.title {
+  background: #42c0fb;
+  padding: 16px;
+  border-radius: 16px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+.info-block {
+  background: #42c0fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  border-radius: 16px;
+  min-width: 610px;
 }
