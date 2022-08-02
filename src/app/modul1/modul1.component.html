@@ -1,0 +1,154 @@
+<div class="modul1-container">
+  <h1>Modul-1</h1>
+  <a [routerLink]="['/modul1']" [queryParams]="{ debug: true }" fragment="test">
+    link to user component
+  </a>
+  <a href="#test">test</a>
+  <div class="header">
+    <h2>Die Landkarte im Gesundheitswesen</h2>
+  </div>
+</div>
+
+<div class="gw-akteure">
+  <div class="search-input">
+    <label for="">Search here: </label>
+    <input [(ngModel)]="searchText" type="search" />
+  </div>
+  <div
+    class="text-container"
+    [innerHtml]="text | highlighter: searchText:'full'"
+  ></div>
+  <div class="akteure">
+    <div
+      class="text-container2"
+      [innerHtml]="text2 | highlighter: searchText:'full'"
+    ></div>
+    <div
+      class="text-container2"
+      [innerHtml]="text3 | highlighter: searchText:'full'"
+    ></div>
+    <div
+      class="text-container2"
+      [innerHtml]="text4 | highlighter: searchText:'full'"
+    ></div>
+    <div
+      class="text-container2"
+      [innerHtml]="text5 | highlighter: searchText:'full'"
+    ></div>
+    <div
+      class="text-container2"
+      [innerHtml]="text6 | highlighter: searchText:'full'"
+    ></div>
+    <div
+      class="text-container2"
+      [innerHtml]="text7 | highlighter: searchText:'full'"
+    ></div>
+    <div
+      class="text-container2"
+      [innerHtml]="text8 | highlighter: searchText:'full'"
+    ></div>
+  </div>
+</div>
+
+<div class="discriptions">
+  <span [innerHtml]="text2 | highlighter: searchText:'full'"></span>
+  <ul>
+    <li>
+      Beratung der Politik über die Ausbreitung und Risikoeinschätzung von
+      Infektionen.
+    </li>
+    <li>Erkennung und Erforschung von Krankheiten.</li>
+    <li>Überwachen von Epidemien.</li>
+    <li>Impfempfehlung.</li>
+  </ul>
+</div>
+<div class="discriptions">
+  <span [innerHtml]="text6 | highlighter: searchText:'full'"></span>
+  <span
+    >Das DIVI Intensivregister ist ein Projekt im Rahmen der COVID-19 Pandemie
+    zur Echtzeit-Datenerfassung.
+  </span>
+  <ul>
+    <li>
+      Auf Grundlage des bereits bestehenden Meldeportals für akutes
+      Lungenversagen.
+    </li>
+    <li>Austausch über Diagnose- und Behandlungsstrategien.</li>
+    <li>Identifikation freier Intensivbetten.</li>
+    <li>
+      Echtzeitanalyse der aktuellen und zu erwartenden Versorgungssituation.
+    </li>
+    <li>
+      Seit April 2020 Verpflichtung aller intensivbettenführenden
+      Akutkrankenhäuser in Deutschland zur täglichen Meldung im
+      DIVI-Intensivregister.
+    </li>
+  </ul>
+</div>
+<div class="discriptions">
+  <span [innerHtml]="text9 | highlighter: searchText:'full'"></span>
+  <ul>
+    <li>Beratung von Arzneimittelherstellern zu COVID-19.</li>
+    <li>
+      Bearbeitung (BfArM) und Genehmigung (PEI) klinischer Prüfungen von
+      Impfstoffen.
+    </li>
+    <li>
+      Bereitstellung (BfArM) und vergleichende Bewertung (PEI) von Antigen
+      Schnelltests.
+    </li>
+    <li>Bewertung von Verdachtsfällen unerwünschter Nebenwirkungen.</li>
+    <li>
+      Prüfung von Impfstoffentwicklungen auf Qualität, Wirksamkeit und
+      Sicherheit.
+    </li>
+  </ul>
+</div>
+
+<div class="discriptions">
+  <span [innerHtml]="text5 | highlighter: searchText:'full'"></span>
+  <ul>
+    <li>Seit 26.05.2020 DIMDI gehört zu BfArM.</li>
+    <li>Digitalisierung im Gesundheitswesen.</li>
+    <li>Organspenderegister .</li>
+    <li>
+      Entwicklung und Betreibung von Informationssystemen Z.B. für Arzneimittel,
+      Medizinprodukte, Versorgungsdaten.
+    </li>
+    <li>
+      Bereitstellung von Informationen aus der gesamten Medizin und ihren
+      Randgebieten Z.B. medizinische Klassifikationen (ICD).
+    </li>
+  </ul>
+</div>
+<div class="discriptions">
+  <span [innerHtml]="text7 | highlighter: searchText:'full'"></span>
+  <ul>
+    <li>Information über Vor- und Nachteile medizinischer Leistungen.</li>
+    <li>
+      Erstellung von Gutachten zu Arzneimitteln,Behandlungsmethoden, Screening
+      etc.
+    </li>
+    <li>Bereitstellung allgemeinverständlicher Gesundheitsinformationen.</li>
+    <li>
+      COVID-19: Beurteilung der Impfstoffe COVID-19 bei chronisch
+      Kranken,Unterstützung in der Coronakrise.
+    </li>
+  </ul>
+</div>
+<div class="discriptions">
+  <span [innerHtml]="text4 | highlighter: searchText:'full'"></span>
+  <ul>
+    <li>
+      Aufgaben zur Prävention und Gesundheitsförderung mit unterschiedlichen
+      Schwerpunkten.
+    </li>
+    <li>
+      Erstellung von Maßnahmen und Leitung von Projekten und Programmen zur
+      Gesundheitsförderung.
+    </li>
+    <li>Information rund um die unterschiedlichen COVID19 Impfstoffe.</li>
+    <li>Informationen zur Verteilung der Corona Schutzimpfung.</li>
+  </ul>
+</div>
+<div id="test"><span>test</span></div>

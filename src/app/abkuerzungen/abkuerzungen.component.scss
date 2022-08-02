@@ -1,0 +1,34 @@
+:host {
+  flex: 1;
+}
+.shorcut-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.discriptions {
+  display: flex;
+  flex-direction: column;
+  background-color: #318deb;
+  width: 80%;
+  margin-top: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  span {
+    font-weight: bold;
+    font-family: mutka;
+    background: #ff370a;
+    padding: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+  p {
+    font-family: mutka;
+    padding: 16px;
+    border-radius: 16px;
+    width: 80%;
+    align-self: center;
+  }
+}

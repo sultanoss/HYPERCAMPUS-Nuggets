@@ -1,0 +1,143 @@
+:host {
+  flex: 1;
+}
+
+body {
+  position: relative;
+}
+
+.modul1-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: mutka;
+  color: #3d3d3d;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+.header {
+  background-color: #2f8aea;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  color: white;
+}
+.gw-akteure {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #3d3d3d;
+}
+::ng-deep .highlighted-text {
+  background-color: yellow;
+  padding: 16px;
+  border-radius: 16px;
+  color: black;
+}
+
+.search-input {
+  align-self: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+  label {
+    font-weight: 600;
+    font-family: mutka;
+  }
+  input {
+    width: 440px;
+    border-radius: 16px;
+    height: 30px;
+    padding: 8px;
+  }
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  font-family: mutka;
+  font-weight: bold;
+  color: #3d3d3d;
+  border-radius: 16px;
+  padding: 16px;
+  width: 67%;
+  background: hsl(211deg 82% 55%);
+  color: black;
+  font-size: 18px;
+  align-self: center;
+}
+
+.text-container2 {
+  height: 100px;
+  width: 200px;
+  background: hsl(11deg 100% 52%);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  padding: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.akteure {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.bg {
+  position: absolute;
+  background: hsl(0deg 0% 13%);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  background: white;
+  height: 500px;
+  width: 500px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.show {
+  display: flex;
+}
+
+.discriptions {
+  display: flex;
+  flex-direction: column;
+  background-color: #318deb;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 16px;
+  margin-bottom: 16px;
+
+  span {
+    padding: 16px;
+    font-weight: bold;
+    margin-top: 16px;
+    color: white;
+  }
+  li{
+    font-weight: bold;
+  }
+}
