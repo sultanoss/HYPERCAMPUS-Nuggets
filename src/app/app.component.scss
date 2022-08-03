@@ -2,6 +2,24 @@ body {
   display: flex;
 }
 
+.menu-bar {
+  display: flex;
+  background: #3d3d3d;
+  height: 100px;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  a{
+    color: white;
+    text-decoration: none;
+    font-family: mutka;
+    font-weight: bold;
+  }
+}
+
 aside {
   color: #fff;
   width: 250px;
@@ -88,7 +106,8 @@ body {
   right: 5px;
 }
 
-.welcom-container{
+.welcom-container {
   display: flex;
+  flex-direction: column;
   font-family: mutka;
 }
