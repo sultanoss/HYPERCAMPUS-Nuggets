@@ -1,6 +1,11 @@
 :host {
   flex: 1;
 }
+span {
+  font-family: raleway;
+  padding: 8px;
+  border-radius: 16px;
+}
 .shorcut-container {
   display: flex;
   flex-direction: column;
@@ -16,16 +21,15 @@
   margin-top: 16px;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
+  font-family: raleway;
   span {
     font-weight: bold;
-    font-family: mutka;
     background: #ff370a;
     padding: 16px;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
   }
   p {
-    font-family: mutka;
     padding: 16px;
     border-radius: 16px;
     width: 80%;
@@ -33,7 +37,7 @@
   }
 }
 
-span{
+span {
   width: 80%;
   background: black;
   color: white;

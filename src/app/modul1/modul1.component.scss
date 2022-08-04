@@ -6,6 +6,12 @@ body {
   position: relative;
 }
 
+h1 {
+  font-family: raleway;
+}
+li{
+  font-family: raleway;
+}
 .modul1-container {
   display: flex;
   flex-direction: column;
@@ -25,6 +31,7 @@ body {
   align-items: center;
   border-radius: 16px;
   color: white;
+  font-family: raleway;
 }
 .gw-akteure {
   display: flex;
@@ -58,7 +65,7 @@ body {
 .text-container {
   display: flex;
   justify-content: center;
-  font-family: mutka;
+  font-family: raleway;
   font-weight: bold;
   color: #3d3d3d;
   border-radius: 16px;
@@ -83,7 +90,7 @@ body {
   font-weight: bold;
   padding: 16px;
   margin: 10px;
-  cursor: pointer;
+  font-family: raleway;
 }
 
 .akteure {
@@ -117,7 +124,7 @@ body {
 }
 
 .show {
-  display: flex;
+  display: block;
 }
 
 .discriptions {
@@ -129,6 +136,7 @@ body {
   margin-right: auto;
   border-radius: 16px;
   margin-bottom: 16px;
+  font-family: raleway;
 
   span {
     padding: 16px;
@@ -164,6 +172,7 @@ body {
   padding-left: 16px;
   padding-right: 16px;
   word-break: break-word;
+  max-width: 690px;
 
   img {
     margin-right: 10px;
@@ -175,7 +184,8 @@ body {
   align-items: center;
   font-weight: bold;
   margin-bottom: 16px;
-  width: 80%;
+  width: 50%;
+  font-family: raleway;
 
   img {
     margin-right: 10px;
@@ -191,6 +201,7 @@ body {
   margin-top: 8px;
   min-width: 750px;
   text-align: center;
+  font-family: raleway;
 }
 
 .info-block {
@@ -200,5 +211,47 @@ body {
   align-items: center;
   padding: 16px;
   border-radius: 16px;
-  min-width: 610px;
+  width: 610px;
+  margin-bottom: 16px;
+  font-family: raleway;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 34px;
+
+  img {
+    width: 450px;
+    cursor: pointer;
+  }
+}
+
+.big-img {
+  transform: scale(1.5);
+}
+
+.pdf-button {
+  display: flex;
+  margin-bottom: 32px;
+
+  button {
+    margin: 10px;
+    margin: 10px;
+    outline: none;
+    background: red;
+    border: none;
+    border-radius: 16px;
+    padding: 16px;
+    color: white;
+    font-family: raleway;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+    transition: ease-in-out;
+  }
 }

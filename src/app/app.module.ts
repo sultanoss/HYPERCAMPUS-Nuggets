@@ -12,6 +12,7 @@ import { Modul1Component } from './modul1/modul1.component';
 import { HighlighterPipe } from './highlighter.pipe';
 import { AbkuerzungenComponent } from './abkuerzungen/abkuerzungen.component';
 import { ViewportScroller } from '@angular/common';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 
 
@@ -28,6 +29,7 @@ import { ViewportScroller } from '@angular/common';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

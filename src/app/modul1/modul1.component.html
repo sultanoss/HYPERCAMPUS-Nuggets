@@ -165,6 +165,31 @@
       im Gesundheitswesen Teil-1/Folie 16 bis 28.</span
     >
   </div>
+  <div class="pdf-button">
+    <button (click)="openPdf2()">Open PDF</button>
+    <button (click)="closePdf2()">Close PDF</button>
+  </div>
+
+  <pdf-viewer
+    *ngIf="show2"
+    [class.show]="show2"
+    [src]="pdf2"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+
   <div class="discriptions">
     <span [innerHtml]="text10 | highlighter: searchText:'full'"></span>
     <p>
@@ -223,7 +248,6 @@
       benachteiligt sind.
     </span>
   </div>
-
   <div class="text-container">
     <span>In Deutschland gilt das Prinzip der Selbstverwaltung.</span>
   </div>
@@ -262,6 +286,29 @@
       im Gesundheitswesen Teil-2/Folie 13 bis 16.</span
     >
   </div>
+  <div class="pdf-button">
+    <button (click)="openPdf4()">Open PDF</button>
+    <button (click)="closePdf4()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show4"
+    [class.show]="show"
+    [src]="pdf3"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
     <span
@@ -285,6 +332,29 @@
       im Gesundheitswesen Teil-2/Folie 17 bis 20.</span
     >
   </div>
+  <div class="pdf-button">
+    <button (click)="openPdf5()">Open PDF</button>
+    <button (click)="closePdf5()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show5"
+    [class.show]="show"
+    [src]="pdf3"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
     <span
@@ -329,6 +399,29 @@
       im Gesundheitswesen Teil-2/Folie 22 bis 28.</span
     >
   </div>
+  <div class="pdf-button">
+    <button (click)="openPdf6()">Open PDF</button>
+    <button (click)="closePdf6()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show6"
+    [class.show]="show"
+    [src]="pdf3"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
     <span
@@ -489,6 +582,29 @@
       im Gesundheitswesen Teil-2/Folie 36 bis 39.</span
     >
   </div>
+  <div class="pdf-button">
+    <button (click)="openPdf7()">Open PDF</button>
+    <button (click)="closePdf7()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show7"
+    [class.show]="show"
+    [src]="pdf3"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
     <span
@@ -516,6 +632,29 @@
       Arztpraxis bis zum Labor</span
     >
   </div>
+  <div class="pdf-button">
+    <button (click)="openPdf8()">Open PDF</button>
+    <button (click)="closePdf8()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show8"
+    [class.show]="show"
+    [src]="pdf4"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
     <span
@@ -790,5 +929,1940 @@
       >Die Ausgangslage ist die Sektorentrennung in Deutschland, das Ziel ist
       die Integrierte Versorgung.</span
     >
+  </div>
+  <div class="text-container">
+    <span>Verbleibende Leistungserbringer.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Viele Arzneimittel dürfen in Deutschland nur inApotheken an Patienten
+      abgegeben werden.</span
+    >
+  </div>
+  <div class="title">
+    <span>Verschreibungspflichtige Arzneimittel</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Finanzierung durch Krankenkasse.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Zuzahlung: trägt zum Teil der Versicherte (bis 10€) Exkl. Kinder und
+      Jugendliche unter 18 JahrenBefreiung von günstigen Präparaten.</span
+    >
+  </div>
+  <div class="title">
+    <span>Frei verkäufliche Arzneimittel</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Keine staatlich festgelegten Preise für nichtverschreibungspflichtige
+      Arzneimittel.</span
+    >
+  </div>
+  <div class="text-container">
+    <span>In Deutschland gibt es insgesamt 1729 Labore.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>344 ambulante Labore.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>1385 Kliniklabore.</span>
+  </div>
+  <div class="title">
+    <span
+      >Die Zusammenarbeit zwischen Haus- bzw. Fachärzten undLaboren ist enorm
+      wichtig</span
+    >
+  </div>
+  <div class="img-container">
+    <img
+      src="assets/img/labor.png"
+      [class.big-img]="bigImg"
+      (click)="showBidImg()"
+    />
+  </div>
+  <div class="text-container">
+    <span>Berufsgruppen im therapeutischen Bereich.</span>
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche2/Tag6/Vom
+      Chefarzt bis zur Pflege/Folie 14 bis 20.</span
+    >
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf9()">Open PDF</button>
+    <button (click)="closePdf9()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show9"
+    [class.show]="show"
+    [src]="pdf5"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Heilmittel- und Hilfsmittelerbringer gehören Berufsgruppen im
+      therapeutischen Bereich an.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Heilmittelrichtlinie ist eine Vereinbarungzwischen den
+      <span [innerHtml]="text19 | highlighter: searchText:'full'"></span>en und
+      den Ärzten mit Kassenzulassung.</span
+    >
+  </div>
+  <div class="text-container">
+    <span>Berufsgruppen in einem Krankenhaus.</span>
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche2/Tag6/Vom
+      Chefarzt bis zur Pflege/Folie 23 bis 42.</span
+    >
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf10()">Open PDF</button>
+    <button (click)="closePdf10()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show10"
+    [class.show]="show"
+    [src]="pdf5"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="title">
+    <span>Geschäftsführung</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Leiter der Verwaltung(Kaufmännischer Geschäftsführer).</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Ärztliche Leitung (Ärztlicher Direktor).</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Pflegedienstleitung.</span>
+  </div>
+  <div class="title">
+    <span>Fachspezifischen Abteilungen</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Chefarzt als Abteilungsleiter.</span>
+  </div>
+  <div class="title">
+    <span>Assistenzarzt</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Ein Assistenzarzt beginnt die Karriere oftmals ineiner Klinik.</span>
+  </div>
+  <div class="title">
+    <span>Facharzt</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Ein Facharzttitel ist Voraussetzung für eineZulassung als
+      Vertragsarzt.</span
+    >
+  </div>
+  <div class="title">
+    <span>Oberarzt</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der Oberarzt stellt die leitende Funktion für dieunterstellten Fach- und
+      Assistenzärzte dar.</span
+    >
+  </div>
+  <div class="title">
+    <span>Chefarzt</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der Chefarzt stellt die leitende Funktion in einerVersorgungseinrichtung
+      des Gesundheitswesens dar.</span
+    >
+  </div>
+  <div class="text-container">
+    <span>Berufsgruppen in der Pflege.</span>
+  </div>
+  <div class="title">
+    <span>Pflegepersonal</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Das Pflegepersonal ist für die Patienten eine enormwichtige
+      Kontaktperson.</span
+    >
+  </div>
+  <div class="title">
+    <span>Stationsleitung</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Stationsleitung leitet ein Team aus Gesundheits-und
+      Krankenpflegern.</span
+    >
+  </div>
+  <div class="title">
+    <span>Pflegedienstleitung</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Pflegedienstleitung erfüllt organisatorische und verwaltende
+      Aufgaben.</span
+    >
+  </div>
+  <div class="text-container">
+    <span>Berufsgruppen im psychologischen Bereich.</span>
+  </div>
+  <div class="title">
+    <span>Ärztlicher Psychotherapeut</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Ein Psychotherapeut hilft Menschen, die unterseelischen und psychischen
+      Störungen leiden.</span
+    >
+  </div>
+  <div class="title">
+    <span>Psychologischer Psychotherapeut</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Es ist zwischen einem ärztlichen und psychologischenPsychotherapeut zu
+      unterscheiden.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Ärztlicher Psychotherapeut darf Medikamente verschreiben.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Psychologischer Psychotherapeut darf keine Medikamente
+      verschreiben.</span
+    >
+  </div>
+  <div class="text-container">
+    <span>Weitere Berufsgruppen.</span>
+  </div>
+  <div class="title">
+    <span>Vertragsarzt</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Behandlung von gesetzlich Versicherten, Privatpatienten und
+      Selbstzahlern.</span
+    >
+  </div>
+  <div class="title">
+    <span>Privatarzt</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Behandlung von Privatpatienten und Selbstzahlernin der eigenen
+      Praxis.</span
+    >
+  </div>
+  <div class="title">
+    <span>(Zahn)-MedizinischeFachangestellte</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >(Zahn)-Medizinische Fachangestellte beraten Patientenzu ärztlichen
+      Behandlungsmaßnahmen.</span
+    >
+  </div>
+  <div class="text-container">
+    <span>Aufbau IT-Abteilung im Krankenhaus.</span>
+  </div>
+  <div class="title">
+    <span
+      >Der Aufbau der Krankenhaus-IT ist individuell in Kliniken aufgebaut</span
+    >
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche2/Tag7/Generelle
+      Strukturen in der IT/Folie 10 bis 14.</span
+    >
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf11()">Open PDF</button>
+    <button (click)="closePdf11()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show11"
+    [class.show]="show"
+    [src]="pdf6"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="text-container">
+    <span
+      >Durch die zunehmende Digitalisierung steigen auch die Herausforderungen
+      an die IT.</span
+    >
+  </div>
+  <div class="title">
+    <span
+      >Zunehmende Komplexität des gesamten Aufgabenspektrums der
+      IT-Abteilung</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Reibungslose und fehlerfreie Funktion der IT-Systeme.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Verbesserung und Weiterentwicklung der IT undMedizintechnik.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Gewährleistung von Sicherheit und Effizienz.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Erstellung von Berichten und Durchführung von IT-Projekten.</span>
+  </div>
+  <div class="title">
+    <span>In manchen Fällen macht das Outsourcing von IT-Services Sinn</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Auslagerung von Teilen der IT-Abteilung oder einzelne IT-Services.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Verbesserung der Effizienz und Patientenzufriedenheit.</span>
+  </div>
+  <div class="title">
+    <span>Für das Outsourcing von IT-Services gibt es zahlreiche Gründe</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Mangel an eigenem IT- und Fachpersonal.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Nichtvorhandensein interner Kompetenzen bei kritischen Themen Z.B.
+      Datenschutz und IT-Security.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Fehlende Zertifizierungen Z.B. ISO 27000/ ISO 27001.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Begrenzte Kapazitäten.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Fehlende Skalierbarkeit, Performance und Flexibilität.</span>
+  </div>
+  <div class="title">
+    <span
+      >Vor der Auslagerung sollte man sich von derFunktionsfähigkeit der
+      Outsourcing-Lösung überzeugen</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Eingesetzte Technologien.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Räumlichkeiten des Anbieters.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Personelle Kapazitäten auch in Hinblick auf Zuverlässigkeit.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Finanzielle Ausstattung des Anbieters.</span>
+  </div>
+  <div class="title">
+    <span
+      >Auch die Vernetzung der medizinischen Geräte im Krankenhaus ist für die
+      IT zunehmend wichtig</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Möglichkeit des Datenaustauschs zwischen verschiedenen Geräten.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Automatisierte Abläufe und reduzierte Komplexität der
+      Bediensysteme.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Weniger Eingreifen durch das Personal.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Verhinderung von Fehlern in der Bedienung , Erhöhte
+      Patientensicherheit.</span
+    >
+  </div>
+  <div class="title">
+    <span
+      >Die meisten Lösungen scheitern daran, dass Geräteunterschiedlicher
+      Hersteller zum Einsatz kommen</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Unterschiedliche Kommunikationsprotokolle und Datenformate.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Kaum umfassend verbreitete Standards , Aktuell: Insellösungen oder
+      Komplettlösungen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Sicherheit : Mehr vernetzte Geräte = mehr Angriffsfläche für Hackeroder
+      Viren.</span
+    >
+  </div>
+  <div class="text-container">
+    <span>Gängiges Arbeitsumfeld Krankenhaus.</span>
+  </div>
+  <div class="title">
+    <span
+      >Das Verharren in alten Routinen und das Festhalten an überkommenen
+      Strukturen ist nicht zeitgemäß</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Häufig Zeitdruck.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Personalmangel.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Hohe Komplexität der Arbeitsprozesse.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Veraltete Strukturen.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Zustände Material.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Zukünftige Herausforderungen.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Investitionsstau.</span>
+  </div>
+  <div class="text-container">
+    <span>Anforderungen an die Hardware.</span>
+  </div>
+  <div class="title">
+    <span
+      >Medizinische Hardware unterliegt spezifischen Anforderungen und
+      Zertifizierungen</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Robust und langlebig( Häufiger Einsatz an unterschiedlichen Orten ,
+      Leistungsstarke und schnelle Verarbeitung von DatenEinsatz unter widrigen
+      Bedingungen ).</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Schnittstellen.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Einfache Nutzerauthentifizierung.</span>
+  </div>
+  <div class="title">
+    <span
+      ><span [innerHtml]="text26 | highlighter: searchText:'full'"></span> ,
+      <span [innerHtml]="text27 | highlighter: searchText:'full'"></span> ,
+      <span [innerHtml]="text28 | highlighter: searchText:'full'"></span
+    ></span>
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche2/Tag7/Generelle
+      Strukturen in der IT/Folie 27 bis 31.</span
+    >
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf3()">Open PDF</button>
+    <button (click)="closePdf3()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show3"
+    [class.show]="show"
+    [src]="pdf1"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Ein
+      <span [innerHtml]="text26 | highlighter: searchText:'full'"></span> ist
+      ein voll ausgestatteter Rechner mitvollwertigem Betriebssystem und lokaler
+      Software.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Das Konzept von
+      <span [innerHtml]="text27 | highlighter: searchText:'full'"></span>
+      beschreibt Endpunkte, die vordergründig als Benutzerschnittstelle
+      dienen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Bei einem
+      <span [innerHtml]="text28 | highlighter: searchText:'full'"></span>
+      handelt es sich um eine besonders schlanke Form eines Thin Clients.</span
+    >
+  </div>
+  <div class="text-container">
+    <span>Infrastruktur und Vernetzung.</span>
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche2/Tag7/Generelle
+      Strukturen in der IT/Folie 36 bis 38.</span
+    >
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf()">Open PDF</button>
+    <button (click)="closePdf()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show"
+    [class.show]="show"
+    [src]="pdf1"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die IT ist die verlässliche Basis für die Gesundheitsversorgung im
+      Klinikum Braunschweig.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Durch die Virtualisierung wird unter anderem die Leistung der
+      Infrastruktur erhöht.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Krankenhäuser müssen sich in ihrer Infrastruktur der zunehmenden
+      intersektoralen Vernetzung anpassen.</span
+    >
+  </div>
+  <div class="text-container">
+    <span
+      >Die
+      <span [innerHtml]="text29 | highlighter: searchText:'full'"></span>.</span
+    >
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche2/Tag8/Die
+      <span [innerHtml]="text29 | highlighter: searchText:'full'"></span
+    ></span>
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf13()">Open PDF</button>
+    <button (click)="closePdf13()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show13"
+    [class.show]="show"
+    [src]="pdf7"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die
+      <span [innerHtml]="text29 | highlighter: searchText:'full'"></span> ist
+      für die Etablierung einer
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span>
+      zuständig.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Telematik bedeutet die Integration von Telekommunikation und
+      Informatik.</span
+    >
+  </div>
+  <div class="title">
+    <span
+      >Die <span [innerHtml]="text30 | highlighter: searchText:'full'"></span
+    ></span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span> ist
+      die Digitale Vernetzung des Gesundheitswesens.</span
+    >
+  </div>
+  <div class="title">
+    <span
+      >Die Ziele der
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span
+    ></span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Versichertenstammdatenmanagement (<span
+        [innerHtml]="text31 | highlighter: searchText:'full'"
+      ></span
+      >).</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Notfalldaten.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Elektronische Patientenakte (<span
+        [innerHtml]="text32 | highlighter: searchText:'full'"
+      ></span
+      >).</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Kommunikation im Medizinwesen (
+      <span [innerHtml]="text33 | highlighter: searchText:'full'"></span>
+      ).</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Sicherer E-Mail und Datenaustausch.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>E-Rezept.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text36 | highlighter: searchText:'full'"></span
+      >.</span
+    >
+  </div>
+  <div class="title">
+    <span
+      >Wem gehört die
+      <span [innerHtml]="text29 | highlighter: searchText:'full'"></span>?</span
+    >
+  </div>
+  <div class="img-container">
+    <img
+      src="assets/img/csm_gematik_Website_Diagramme_01_cj_118cd299ca.png"
+      [class.big-img]="bigImg"
+      (click)="showBidImg()"
+    />
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Ursprünglich lag der Fokus der
+      <span [innerHtml]="text29 | highlighter: searchText:'full'"></span>
+      hauptsächlich auf der elektronischen Gesundheitskarte.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Dabei ist die neue
+      <span [innerHtml]="text29 | highlighter: searchText:'full'"></span> kein
+      closed shop, sondern soll sich für Ideen von außen öffnen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die
+      <span [innerHtml]="text29 | highlighter: searchText:'full'"></span> ist
+      die koordinierende Stelle, die Rahmenbedingungen für eine sichere
+      Vernetzung erstellt.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Nach § 291b
+      <span [innerHtml]="text12 | highlighter: searchText:'full'"></span>
+      übernimmt die
+      <span [innerHtml]="text29 | highlighter: searchText:'full'"></span>
+      Aufgaben zur Etablierung der
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span>.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Ziel ist der vereinfachte Informationsaustausch zwischen allen Akteuren
+      im Gesundheitswesen.</span
+    >
+  </div>
+  <div class="title">
+    <span
+      >Die Gesellschafter setzen sich aus dem
+      <span [innerHtml]="text34 | highlighter: searchText:'full'"></span> und
+      den Spitzenorganisationen des Gesundheitswesens zusammen</span
+    >
+  </div>
+  <div class="img-container">
+    <img
+      src="assets/img/738x415_enlarge.jpg"
+      [class.big-img]="bigImg"
+      (click)="showBidImg()"
+    />
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Für Entscheidungen ist eine gesetzlich vorgeschriebene Mehrheit von
+      51%nötig. Der
+      <span [innerHtml]="text19 | highlighter: searchText:'full'"></span
+      >-Spitzenverband mit 22,05% der Anteile finanziert die Arbeit der
+      <span [innerHtml]="text29 | highlighter: searchText:'full'"></span> zu 93
+      % mit einem Betrag in Höhe von 1,50 Euro pro Jahr je Mitglied der
+      Gesetzlichen Krankenversicherung (§ 291a Abs. 7 Satz 6
+      <span [innerHtml]="text12 | highlighter: searchText:'full'"></span>). Der
+      Verband der Privaten Krankenversicherung trägt 7 Prozent der
+      Finanzierung.</span
+    >
+  </div>
+  <div class="title">
+    <span>Gesetzlicher Auftrag</span>
+  </div>
+  <div class="info-block">
+    <h3>
+      Der gesetzliche Auftrag der
+      <span [innerHtml]="text29 | highlighter: searchText:'full'"></span>
+      umfasst alles Wesentliche der
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span>.
+    </h3>
+    <ul>
+      <li>
+        Einführung, Betrieb & Weiterentwicklung der
+        <span [innerHtml]="text30 | highlighter: searchText:'full'"></span> &
+        elektronischen Gesundheitskarte.
+      </li>
+      <li>
+        Einführung, Betrieb & Weiterentwicklung zugehöriger Fachanwendungen und
+        weiterer Anwendungen.
+      </li>
+    </ul>
+  </div>
+  <div class="info-block">
+    <h3>
+      Das
+      <span [innerHtml]="text19 | highlighter: searchText:'full'"></span>
+      Modernisierungsgesetz (
+      <span [innerHtml]="text35 | highlighter: searchText:'full'"></span> ):
+    </h3>
+    <ul>
+      <li>Stärkung der Versichertensouveränität undVersichertenrechte.</li>
+      <li>
+        Ausweitung der Eigenverantwortung und Beteiligungsrechte der
+        Versicherten.
+      </li>
+      <li>
+        Steigerung der Wirtschaftlichkeit und Qualität des Gesundheitswesens.
+      </li>
+    </ul>
+  </div>
+  <div class="title">
+    <span>Umgesetzte Projekte</span>
+  </div>
+  <div class="img-container">
+    <img
+      src="assets/img/projekte.png"
+      [class.big-img]="bigImg"
+      (click)="showBidImg()"
+    />
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span> wird
+      seit dem Jahr 2004 stetig ausgebaut - einiges konnte umgesetzt
+      werden.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die erste Ausgabe der elektronischen Gesundheitskarte erfolgte im Jahr
+      2011.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Gesundheitskarte wie wir sie kennen kann nicht viel mehr als bereits
+      vor Jahren.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Versichtertenstammdaten sollen auf der elektronischen
+      Gesundheitskarte stets aktuell sein.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die elektronische Patientenakte dient dazu medizinische Dokumente digital
+      nachhalten zu können.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Elektronische Ausweise dienen der Authentifizierung gegenüber der
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span>.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Elektronische Ausweise dienen der Authentifizierung gegenüber der
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span>.</span
+    >
+  </div>
+  <div class="info-block">
+    <h3>Die elektronische Patientenakte</h3>
+    <h4>Seit Januar2021:</h4>
+    <ul>
+      <li>
+        Beginn der Testphase der
+        <span [innerHtml]="text32 | highlighter: searchText:'full'"></span> -
+        Test zunächst in 200 Praxen.
+      </li>
+      <h4>Juli 2021:</h4>
+      <li>
+        Vernetzung aller gesetzlich Versicherten mit Krankenhäusern,Ärzten und
+        Apothekern.
+      </li>
+      <li>Einsicht der Akte durch Krankenhäuser,Ärzte und Apotheken.</li>
+      <li>Die Nutzung ist für Patienten freiwillig.</li>
+    </ul>
+  </div>
+  <div class="title">
+    <span>Sonstige Projekte</span>
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche2/Tag8/Die
+      <span [innerHtml]="text29 | highlighter: searchText:'full'"></span>/Folie
+      32 bis 37</span
+    >
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf14()">Open PDF</button>
+    <button (click)="closePdf14()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show14"
+    [class.show]="show"
+    [src]="pdf7"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>E-Rezept Der schnelle Weg zum richtigen Medikamen.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Elektronische Patientenakte (
+      <span [innerHtml]="text32 | highlighter: searchText:'full'"></span> )
+      Persönliche Daten, persönliche Entscheidungen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Kommunikation im Medizinwesen (
+      <span [innerHtml]="text33 | highlighter: searchText:'full'"></span> )
+      Schnell und sicher kommunizieren.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text36 | highlighter: searchText:'full'"></span> Alle
+      Medikamente jederzeit im Blick.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Notfalldaten Einfach da, wenn es darauf ankommt.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>TI-Messenger Schnelle Nachrichten in Echtzeit.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text38 | highlighter: searchText:'full'"></span> Für
+      eine gemeinsame digitale Sprache im Klinikalltag.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text37 | highlighter: searchText:'full'"></span> Weil
+      Infektionsschutz schnell sein muss.</span
+    >
+  </div>
+
+  <div class="text-container">
+    <span
+      >Interoperabilität der TI (
+      <span
+        >Die <span [innerHtml]="text30 | highlighter: searchText:'full'"></span
+      ></span>
+      ) .</span
+    >
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche2/Tag9/Grundsätze
+      der
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span> /Folie
+      10 bis 23</span
+    >
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf15()">Open PDF</button>
+    <button (click)="closePdf15()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show15"
+    [class.show]="show"
+    [src]="pdf8"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span> ist
+      das sichere Gerüst für digitale Anwendungen im Gesundheitswesen</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Ziel der
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span> ist
+      die bestmögliche Behandlung durch optimale Information aller
+      Beteiligten</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Interoperabilität bezeichnet die Fähigkeit verschiedener Systeme
+      miteinander zusammenzuarbeiten</span
+    >
+  </div>
+  <div class="title">
+    <span>Ebenen der Interoperabilität</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Strukturelle Ebene.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Semantische Ebene.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Syntaktische Ebene.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Organisatorische Ebene.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die strukturelle Interoperabilität ist der erste Schritt zur
+      Kommunikation.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die strukturelle Interoperabilität reicht noch nicht aus, um eine
+      Verbindung herzustellen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die syntaktische Interoperabilität stellt sicher, dass die Information
+      richtig erkannt wird.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die semantische Interoperabilität ist der nächste Schritt zur
+      erfolgreichen Kommunikation.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die semantische Ebene der Interoperabilität stellt das gemeinsame
+      Verständnis der Information sicher.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die organisatorische Interoperabilität stimmt Prozesse systemübergreifend
+      aufeinander ab.</span
+    >
+  </div>
+  <div class="title">
+    <span>Die 4 Ebenen der Interoperabilität für Schnittstellen</span>
+  </div>
+  <div class="img-container">
+    <img
+      src="assets/img/interoperabilität.png"
+      [class.big-img]="bigImg"
+      (click)="showBidImg()"
+    />
+  </div>
+  <div class="text-container">
+    <span
+      >Verlässlichkeit der TI (
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span>
+      )</span
+    >
+  </div>
+  <div class="title">
+    <span
+      >Verlässlichkeit bedeutet umgangssprachlich sich auf seine
+      bereitgestellten Dienste zu verlassen</span
+    >
+  </div>
+  <div class="img-container">
+    <img
+      src="assets/img/tabelleTi.png"
+      [class.big-img]="bigImg"
+      (click)="showBidImg()"
+    />
+  </div>
+  <div class="text-container">
+    <span
+      >Sicherheit und Flächendeckung der TI (
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span>
+      )</span
+    >
+  </div>
+  <div class="title">
+    <span
+      >Das Fundament der TI (
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span> ) ist
+      die verschlüsselte Kommunikation</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>Geschlossenes Netz</h3>
+      <ul>
+        <li>Zugang nur für registrierteNutzer.</li>
+        <li>Mit elektronischem Heilberufs- und Praxisausweis.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>
+        Sichere, verschlüsselte Kommunikation zwischenbekannten
+        Kommunikationspartnern
+      </h3>
+      <ul>
+        <li>Schutz vor dem Zugriff auf sensible Informationen.</li>
+        <li>
+          Das Bundesamt für Sicherheit in der Informationstechnik (<span
+            [innerHtml]="text39 | highlighter: searchText:'full'"
+          ></span
+          >) überprüft die verwendeten kryptographischen Verfahren.
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="title">
+    <span
+      >Das Ziel ist die bundesweite, flächendeckende Vernetzung des
+      Gesundheitswesens.</span
+    >
+  </div>
+  <div class="text-container">
+    <span>Internationaler Vergleich</span>
+  </div>
+  <div class="title">
+    <span
+      >Deutschland holt im internationalen Vergleich bei der Digitalisierung
+      auf.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Von 17 untersuchten Ländern liegt Deutschland im Jahr 2018 auf Platz
+      16.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Entschlossene Herangehensweisen prägen seither den Weg in die
+      Digitalisierung.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >In Kanada werden Rezepte digital ermittelt, in Estland und Dänemark
+      können Patienten Daten online einsehen.</span
+    >
+  </div>
+  <div class="text-container">
+    <span>AktuellerStand</span>
+  </div>
+  <div class="title">
+    <span
+      >Verabschiedungen von Gesetzen sollen helfen, im Bereich Digitalisierung
+      Fahrt aufzunehmen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>
+        Ziel:Schneller Aufbau der TI (
+        <span [innerHtml]="text30 | highlighter: searchText:'full'"></span> )
+        und zügige Einführung der Anwendungen der (
+        <span [innerHtml]="text40 | highlighter: searchText:'full'"></span>)
+      </h3>
+      <ul>
+        <li>Finanzielle Anreize.</li>
+        <li>Sanktionsdrohungen</li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>Terminservice- und Versorgungsgesetz (TSGV) 2019</h3>
+      <ul>
+        <li>
+          Weiterer Schritt zur Förderung der TI (
+          <span [innerHtml]="text30 | highlighter: searchText:'full'"></span> ).
+        </li>
+        <li>
+          Krankenkassen müssen seit 1.Januar 2021 eine
+          <span [innerHtml]="text32 | highlighter: searchText:'full'"></span>
+          zur Verfügungstellen
+        </li>
+        <li>Juli 2022 e-Rezept</li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Sanktionsdrohungen haben geholfen, die Blockade bei der Digitalisierung
+      zu brechen.</span
+    >
+  </div>
+  <div class="text-container">
+    <span
+      >Vom Stammdatenabgleich zur Patientenakte – der Plan zur Einführung der
+      TI-Anwendungen im Überblick</span
+    >
+  </div>
+  <div class="img-container">
+    <img
+      src="assets/img/tiPlan.png"
+      [class.big-img]="bigImg"
+      (click)="showBidImg()"
+    />
+  </div>
+  <div class="text-container">
+    <span
+      >Die TI (
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span> ) und
+      die IT Systeme</span
+    >
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche3/Tag11/Die
+      Grundsätzliche Architektur der
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span>
+    </span>
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf16()">Open PDF</button>
+    <button (click)="closePdf16()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show16"
+    [class.show]="show"
+    [src]="pdf9"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="title">
+    <span
+      >Die TI (
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span> )
+      besteht aus drei Bausteinen: der dezentralen, zentralen und
+      Anwendungsinfrastruktur.</span
+    >
+  </div>
+  <div class="img-container">
+    <img
+      src="assets/img/bausteineTi.png"
+      [class.big-img]="bigImg"
+      (click)="showBidImg()"
+    />
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>Dezentrale Infrastruktur</h3>
+      <ul>
+        <li>
+          Anteile der TI-Plattform in den lokalen Netzen der Leistungserbringer
+          und Kostenträger.
+        </li>
+        <li>Sicherer Zugang der Nutzer zum geschlossenen Netz</li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>Zentrale Infrastruktur</h3>
+      <ul>
+        <li>Das geschlossene Netz.</li>
+        <li>
+          Enthält zentrale Dienste zur Unterstützung der TI (
+          <span [innerHtml]="text30 | highlighter: searchText:'full'"></span> ).
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>Anwendungsinfrastruktur</h3>
+      <h4>Anwendungen in der TI, z.B.</h4>
+      <ul>
+        <li>Elektronischer Medikationsplan.</li>
+        <li>Elektronische Notfalldaten.</li>
+        <li>
+          Elektronische Patientenakte(
+          <span [innerHtml]="text32 | highlighter: searchText:'full'"></span> ).
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Dezentrale Komponenten sind TI-Komponenten, die lokal in Praxen
+      aufgestellt und installiert werden.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die zentrale Infrastruktur enthält Public Key Infrastruktur(
+      <span [innerHtml]="text41 | highlighter: searchText:'full'"></span>
+      )-Dienste und Rollensysteme .</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Anwendungsinfrastruktur enthält Dienste für die konkreten
+      Anwendungen, die zur Verfügung stehen.</span
+    >
+  </div>
+  <div class="title">
+    <span
+      >Der Zugang zum zentralen Netz der
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span>
+      erfolgt über die verschlüsselte Internetverbindung</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Ein von der gematik zertifizierter VPN-Dienst ist Pflicht.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Sicherer Tunnel, der vom restlichen Datenverkehr abgeschirmt ist.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Gegensatz zum Internet: TI = geschlossener, ausschließlich den
+      Beteiligten des Gesundheitswesens vorbehaltener Raum.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Für reibungslose Kommunikation und sicheren Austausch von Daten.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Mittels sicherer Verschlüsselungstechnologien.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >In der Regel Paketlösungen: Konnektor, VPN, E-Health
+      Kartenterminal.</span
+    >
+  </div>
+  <div class="title">
+    <span
+      >Für den Anschluss an die
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span>
+      benötigen Praxen passende Komponenten</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Internetanschluss samt VPN-Zugang.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Konnektor.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Kartenterminal (
+      <span [innerHtml]="text42 | highlighter: searchText:'full'"></span>
+      ).</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Elektronischer Praxisausweis bzw. Klinikausweis (
+      <span [innerHtml]="text43 | highlighter: searchText:'full'"></span>
+      ).</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Elektronischer Heilberufsausweis (
+      <span [innerHtml]="text44 | highlighter: searchText:'full'"></span> )
+      .</span
+    >
+  </div>
+  <div class="title">
+    <span
+      >Auch Versicherte haben Zugang zur
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span>
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>
+        Zugang für Versicherte am Beispiel der
+        <span [innerHtml]="text32 | highlighter: searchText:'full'"></span>
+      </h3>
+      <h4>
+        Einsicht in die
+        <span [innerHtml]="text32 | highlighter: searchText:'full'"></span> über
+        eine mobile Anwendung (App)
+      </h4>
+      <ul>
+        <li>Nutzung durch Smartphone oder Tablet.</li>
+        <li>Eigenständige Vergabe von Berechtigungen .</li>
+        <li>
+          Versicherte entscheiden, wer Zugriff hat und Dokumente einsehen darf.
+        </li>
+        <li>
+          Aktuell: Nur Zugriff auf gesamte
+          <span [innerHtml]="text32 | highlighter: searchText:'full'"></span>.
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="title">
+    <span
+      >Der Zugang zur
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span> ist
+      für Leistungserbringer notwendig
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>
+        Institutions- und Praxisausweis (
+        <span [innerHtml]="text43 | highlighter: searchText:'full'"></span> )
+      </h3>
+      <ul>
+        <li>Zugang zur Telematikinfrastruktur für Institutionen.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>
+        Elektronischer Heilberufsausweis (
+        <span [innerHtml]="text44 | highlighter: searchText:'full'"></span> )
+      </h3>
+      <ul>
+        <li>Identifikation von Ärzten, Zahnärzten, Apothekern.</li>
+        <li>Signatur von elektronischen Dokumenten</li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>Fernsignatur sign-me</h3>
+      <ul>
+        <li>
+          Für eine elektronische Unterschrift ohne zusätzliche Hard- oder
+          Software .
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Vollständigkeit der Komponenten.</span>
+  </div>
+  <div class="text-container">
+    <span
+      >Authentifizierung durch die elektronische Gesundheitskarte (
+      <span [innerHtml]="text40 | highlighter: searchText:'full'"></span>
+      ).</span
+    >
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche3/Tag12/Aufbau der
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span> Teil
+      II
+    </span>
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf17()">Open PDF</button>
+    <button (click)="closePdf17()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show17"
+    [class.show]="show"
+    [src]="pdf10"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die
+      <span [innerHtml]="text40 | highlighter: searchText:'full'"></span> und
+      <span [innerHtml]="text44 | highlighter: searchText:'full'"></span> sind
+      Schlüsselinstrumente für TI-Anwendungen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die elektronische Gesundheitskarte muss sicher sein, § 291
+      <span [innerHtml]="text12 | highlighter: searchText:'full'"></span>
+      Elektronische Gesundheitskarte.</span
+    >
+  </div>
+  <div class="text-container">
+    <span> Ausweise, Terminals, Konnektoren </span>
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche3/Tag12/Aufbau der
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span> Teil
+      II/Folie 12 bis 22
+    </span>
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf18()">Open PDF</button>
+    <button (click)="closePdf18()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show18"
+    [class.show]="show"
+    [src]="pdf10"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der Heilberufsausweis und Institutionsausweis sind Grundvoraussetzung für
+      die digitale Patientenbetreuung.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Über den Ausweis wird der Zugang zu den besonders geschützten
+      Online-Daten oder -Diensten gewährleistet.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Sicherheit ist von großer Bedeutung bei der Herausgabe von
+      Heilberufsausweisen .</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der Arzt bestellt sich einen eHeilberufsausweis bei seiner zuständigen
+      Ärztekammer .</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>eHealth Kartenterminals dienen der Datenübertragung .</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Ein Konnektor kann je nach freigeschalteten Modulen 25-50 Kartenterminals
+      verwalten.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >RZK – Rechenzentrumskonnektor:RZK sind Konnektoren, welche für den
+      Einsatz in Rechenzentren konzipiert sind und die zusätzlich die
+      Anforderungen der DKG erfüllen, etwa die Mandantenfähigkeit für die
+      Abbildung von Leistungs- und Organisationsbereichen eines Krankenhauses
+      .</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Patienten bekommen ein Recht auf moderne Versorgung.</span>
+  </div>
+  <div class="text-container">
+    <span> Schritte in die Telematikinfrastruktur </span>
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche3/Tag12/Aufbau der
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span> Teil
+      II/Folie 23 bis 48
+    </span>
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf19()">Open PDF</button>
+    <button (click)="closePdf19()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show19"
+    [class.show]="show"
+    [src]="pdf10"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die
+      <span [innerHtml]="text40 | highlighter: searchText:'full'"></span> und
+      <span [innerHtml]="text44 | highlighter: searchText:'full'"></span> sind
+      Schlüsselinstrumente für TI-Anwendungen .</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der erste Schritt in die Telematikinfrastruktur ist der Workshop.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der Workshop gibt Hilfestellung bei den ersten Schritten in die
+      Digitalisierung.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Jede Praxis benötigt mindestens fünf Komponenten für den Anschluss an die
+      TI.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der Konnektor stellt ein sogenanntes virtuelles privates Netzwerk (VPN)
+      zur TI her.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Kosten für den Konnektor sind in der Erstattungspauschale enthalten.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Neue
+      <span [innerHtml]="text42 | highlighter: searchText:'full'"></span> sind
+      notwendig für die Online Anwendung der
+      <span [innerHtml]="text40 | highlighter: searchText:'full'"></span>.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Kosten für Kartenterminals sind in der Erstattungspauschale
+      enthalten.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Mobile
+      <span [innerHtml]="text42 | highlighter: searchText:'full'"></span> für
+      Hausbesuche stehen auch zur Verfügung .
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Kosten werden für den Praxisausweis und Heilberufsausweis erstattet.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der VPN-Zugangsdienst ist unerlässlich bei der Anbindung an die TI.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Die Bestellung der TI-Hardware erfolgt über Dienstleister. </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Für die jeweiligen Komponenten werden auch Lizenzen benötigt. </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >TI-Dienstleister vor Ort benötigen keine Zertifizierung durch die
+      Gematik.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Das PVS-Update ist der erste Schritt zur Anbindung an die TI. </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Bei der Anbindung an die TI müssen die jeweiligen Lieferzeiten beachtet
+      werden.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >In dem Infomodell wird die Struktur der Praxis dargestellt und
+      dokumentiert.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Vor der Anbindung müssen alle Komponenten geprüft werden. </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Nach Abschluss der Vorbereitungen wird der Testlauf gestartet. </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Zum Schluss: Der Rollout kann beginnen. </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Es muss konstant am Anschluss an die TI gearbeitet werden . </span>
   </div>
 </div>
