@@ -25,7 +25,13 @@ export class Modul1Component implements OnInit {
   show17: boolean = false;
   show18: boolean = false;
   show19: boolean = false;
+  show20: boolean = false;
+  show21: boolean = false;
+  show22: boolean = false;
+  show23: boolean = false;
+
   bigImg: boolean = false;
+
   pdf1 = 'assets/pdf/Generelle Strukturen in der IT.pdf';
   pdf2 = 'assets/pdf/Die Landkarte im Gesundheitswesen Teil 1.pdf';
   pdf3 = 'assets/pdf/04_Die Landkarte im Gesundheitswesen Teil 2 (1).pdf';
@@ -36,8 +42,13 @@ export class Modul1Component implements OnInit {
   pdf8 = 'assets/pdf/Grundsätze der Telematik-Infrastruktur_W2.pdf';
   pdf9 = 'assets/pdf/Die grundsätzliche Architektur der TI.pdf';
   pdf10 = 'assets/pdf/Aufbau der Telematikinfrastruktur Teil II.pdf';
+  pdf11 = 'assets/pdf/Anwendungen der TI E-Patientenakte und eRezept.pdf';
+  pdf12 = 'assets/pdf/Anwendungen der TI KIM und E-Medikationsplan.pdf';
+
   title = 'highlight-text';
+
   searchText = '';
+
   text = `In Deutschland gibt es zahlreiche unterschiedliche Akteure im
   Gesundheitswesen.`;
   text2 = `Robert Koch Institut`;
@@ -70,7 +81,7 @@ export class Modul1Component implements OnInit {
   text29 = `Gematik`;
   text30 = `Telematikinfrastruktur`;
   text31 = `VSDM`;
-  text32 = `epa`;
+  text32 = `ePA`;
   text33 = `KIM`;
   text34 = `BMG`;
   text35 = `GMG`;
@@ -83,6 +94,10 @@ export class Modul1Component implements OnInit {
   text42 = `eHealth KT`;
   text43 = `SMC-B`;
   text44 = `eHBA`;
+  text45 = `e-Rezept`;
+  text46 = `KIS`;
+  text47 = `PVS`;
+
 
   constructor() {}
 
@@ -205,5 +220,29 @@ export class Modul1Component implements OnInit {
   }
   closePdf19() {
     this.show19 = false;
+  }
+  openPdf20() {
+    this.show20 = true;
+  }
+  closePdf20() {
+    this.show20 = false;
+  }
+  openPdf21() {
+    this.show21 = true;
+  }
+  closePdf21() {
+    this.show21 = false;
+  }
+  openPdf22() {
+    this.show22 = true;
+  }
+  closePdf22() {
+    this.show22 = false;
+  }
+  openPdf23() {
+    this.show23 = true;
+  }
+  closePdf23() {
+    this.show23 = false;
   }
 }

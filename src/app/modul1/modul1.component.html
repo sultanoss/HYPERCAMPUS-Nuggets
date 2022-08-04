@@ -1694,7 +1694,10 @@
   </div>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
-    <span>E-Rezept.</span>
+    <span
+      ><span [innerHtml]="text45 | highlighter: searchText:'full'"></span
+      >.</span
+    >
   </div>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
@@ -1943,7 +1946,10 @@
   ></pdf-viewer>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
-    <span>E-Rezept Der schnelle Weg zum richtigen Medikamen.</span>
+    <span
+      ><span [innerHtml]="text32 | highlighter: searchText:'full'"></span> Der
+      schnelle Weg zum richtigen Medikamen.</span
+    >
   </div>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
@@ -2263,7 +2269,10 @@
           <span [innerHtml]="text32 | highlighter: searchText:'full'"></span>
           zur Verfügungstellen
         </li>
-        <li>Juli 2022 e-Rezept</li>
+        <li>
+          Juli 2022
+          <span [innerHtml]="text45 | highlighter: searchText:'full'"></span>
+        </li>
       </ul>
     </div>
   </div>
@@ -2412,7 +2421,11 @@
   </div>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
-    <span>Ein von der gematik zertifizierter VPN-Dienst ist Pflicht.</span>
+    <span
+      >Ein von der
+      <span [innerHtml]="text29 | highlighter: searchText:'full'"></span>
+      zertifizierter VPN-Dienst ist Pflicht.</span
+    >
   </div>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
@@ -2828,7 +2841,7 @@
     <img src="assets/img/info-32.png" />
     <span
       >TI-Dienstleister vor Ort benötigen keine Zertifizierung durch die
-      Gematik.
+      <span [innerHtml]="text29 | highlighter: searchText:'full'"></span>.
     </span>
   </div>
   <div class="more-infos">
@@ -2861,8 +2874,654 @@
     <img src="assets/img/info-32.png" />
     <span>Zum Schluss: Der Rollout kann beginnen. </span>
   </div>
+  <div class="text-container">
+    <span>
+      Alles rund um die
+      <span [innerHtml]="text32 | highlighter: searchText:'full'"></span>
+    </span>
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien
+      /Modul1/Woche3/Tag13/Anwendungen der TI: E-Patientenakte und
+      <span [innerHtml]="text45 | highlighter: searchText:'full'"></span>/Folie
+      12 bis 31</span
+    >
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf20()">Open PDF</button>
+    <button (click)="closePdf20()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show20"
+    [class.show]="show"
+    [src]="pdf11"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
-    <span>Es muss konstant am Anschluss an die TI gearbeitet werden . </span>
+    <span
+      >Die elektronische Patientenakte (
+      <span [innerHtml]="text32 | highlighter: searchText:'full'"></span> ) ist
+      das zentrale Element der vernetzten Gesungheitsversorgung.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die elektronische Patientenakte (
+      <span [innerHtml]="text32 | highlighter: searchText:'full'"></span> ) ist
+      auch das zentrale Element der vernetzten.
+      <span [innerHtml]="text30 | highlighter: searchText:'full'"></span>.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die elektronische Patientenakte weiter Ausbaustufen sind geplant.</span
+    >
+  </div>
+  <div class="img-container">
+    <img
+      src="assets/img/epastufen.png"
+      [class.big-img]="bigImg"
+      (click)="showBidImg()"
+    />
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die elektronische Patientenakte dient dazu, medizinische Dokumente
+      digital nachhalten zu können.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Die technischen Voraussetzungen müssen erfüllt sein.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Auf der elektronischen Gesundheitskarte ist ersichtlich, ob sie
+      NFC-tauglich ist.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Zur Registrierung muss der Patient identifiziert werden.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der Log-in zur ePA funktioniert über zwei unterschiedliche Wege.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Zur Anmeldung mit NFC-fähiger Gesundheitskarte wird auch ein NFC-fähiges
+      Gerät benötigt.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Die ePA wird individuell mit Daten befüllt.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Nach Zustimmung des Patienten kann der Arzt ebenfalls auf die ePA
+      zugreifen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die elektronische Patientenakte hat für alle Akteure des
+      Gesundheitswesens Vorteile.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Ein allgemeiner Vorteil ist der mobile Zugriff und die Minimierung von
+      Papierverbrauch.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Die Einführung der ePA erfolgt über das 3-Phasen-Modell.</span>
+  </div>
+  <div class="title">
+    <span>Ein Blick in die Zukunft: Was kommt im Jahr 2023?</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Dokumentation der Pflege und sonstigen Gesundheitsdienstleistern in der
+      <span [innerHtml]="text32 | highlighter: searchText:'full'"></span>.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Speicherung elektronischer Krankschreibungen.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Anschluss von Physiotherapeuten, Pflegeeinrichtungen oder Hebammen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Daten zu Forschungszwecken.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Mit der
+      <span [innerHtml]="text32 | highlighter: searchText:'full'"></span> 3.0
+      wird es ganz einfach, direkt mit Ärzten oder Ärztinnen in Kontakt zu
+      treten – ein integrierter Messenger macht dies möglich.</span
+    >
+  </div>
+  <div class="text-container">
+    <span>Kasseneigene Lösungen</span>
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien
+      /Modul1/Woche3/Tag13/Anwendungen der TI: E-Patientenakte und
+      <span [innerHtml]="text45 | highlighter: searchText:'full'"></span>/Folie
+      32 bis 35</span
+    >
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf21()">Open PDF</button>
+    <button (click)="closePdf21()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show21"
+    [class.show]="show"
+    [src]="pdf11"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die
+      <span [innerHtml]="text32 | highlighter: searchText:'full'"></span> wird
+      von den gesetzlichen Krankenkassen zur Verfügung gestellt.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die
+      <span [innerHtml]="text32 | highlighter: searchText:'full'"></span> wird
+      von den gesetzlichen Krankenkassen zur Verfügung gestellt.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Techniker hat auch eine eigene
+      <span [innerHtml]="text32 | highlighter: searchText:'full'"></span> - den
+      TK-Safe.</span
+    >
+  </div>
+  <div class="text-container">
+    <span
+      >Alles rund um das
+      <span [innerHtml]="text45 | highlighter: searchText:'full'"></span>
+    </span>
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien
+      /Modul1/Woche3/Tag13/Anwendungen der TI: E-Patientenakte und
+      <span [innerHtml]="text45 | highlighter: searchText:'full'"></span>/Folie
+      36 bis 54</span
+    >
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf21()">Open PDF</button>
+    <button (click)="closePdf21()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show21"
+    [class.show]="show"
+    [src]="pdf11"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Das e-Rezept verbessert die Abläufe bei der arzneimittelversorgung in
+      Deutschland.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Das
+      <span [innerHtml]="text45 | highlighter: searchText:'full'"></span>
+      verbessert die Abläufe bei der arzneimittelversorgung in
+      Deutschland.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Verschreibungspflichtige Medikamente können als elektronisches Rezept
+      ausgestellt werden.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Patienten können entscheiden, auf welchem Weg sie das
+      <span [innerHtml]="text45 | highlighter: searchText:'full'"></span>
+      einlösen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Das
+      <span [innerHtml]="text45 | highlighter: searchText:'full'"></span> sorgt
+      für eine sichere Kommunikation zwischen Arzt,Patienten und Apotheke.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der Arzt ist dafür zuständig, das
+      <span [innerHtml]="text45 | highlighter: searchText:'full'"></span> zu
+      erstellen und mit der elektronischen Signatur zu unterzeichnen.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der Patient erhält den Rezeptcode und kann bei unterschiedlichen
+      Apotheken die Verfügbarkeit prüfen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Die Apotheke kann über den Rezeptcode die Rezeptdaten einsehen.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die technischen Voraussetzungen müssen zur Nutzung erfüllt sein.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Erstellung eines
+      <span [innerHtml]="text45 | highlighter: searchText:'full'"></span>s auch
+      ohne persönlichen Arztkontakt möglich.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Das
+      <span [innerHtml]="text45 | highlighter: searchText:'full'"></span> bringt
+      Vorteile für alle Akteure im Gesundheitswesen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Für die Apotheken ist klar ersichtlich, welches Medikament benötigt wird.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die App zum
+      <span [innerHtml]="text45 | highlighter: searchText:'full'"></span> wird
+      von der
+      <span [innerHtml]="text29 | highlighter: searchText:'full'"></span>
+      bereitgestellt.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text45 | highlighter: searchText:'full'"></span> statt
+      Rezepte in Papierform.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>QR-Codes für das Einlösen auf Papier.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Beauftragung der
+      <span [innerHtml]="text16 | highlighter: searchText:'full'"></span> und
+      <span [innerHtml]="text19 | highlighter: searchText:'full'"></span
+      >-Spitzenverband zum Entwurf eines solchen QR-Code Ausdrucks.
+    </span>
+  </div>
+  <div class="text-container">
+    <span
+      >Alles rund um das
+      <span [innerHtml]="text33 | highlighter: searchText:'full'"></span>
+    </span>
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien
+      /Modul1/Woche3/Tag14/Anwendungen der TI:
+      <span [innerHtml]="text33 | highlighter: searchText:'full'"></span> und
+      <span [innerHtml]="text36 | highlighter: searchText:'full'"></span>/Folie
+      11 bis 28.
+    </span>
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf22()">Open PDF</button>
+    <button (click)="closePdf22()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show22"
+    [class.show]="show"
+    [src]="pdf12"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text33 | highlighter: searchText:'full'"></span> sorgt
+      für den sicheren Austausch von sensiblen Informationen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text33 | highlighter: searchText:'full'"></span> steht
+      für Kommunikation im Medizinwesen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Früher hieß
+      <span [innerHtml]="text33 | highlighter: searchText:'full'"></span> noch
+      KOM-LE.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Im
+      <span [innerHtml]="text33 | highlighter: searchText:'full'"></span> kann
+      der Arzt analog zu einem regulären E-MailClient eine Nachricht
+      verfassen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text33 | highlighter: searchText:'full'"></span
+      >-Nachrichten werden vor dem Versand verschlüsselt und beim Empfänger
+      wieder entschlüsselt.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text33 | highlighter: searchText:'full'"></span> wird
+      es in zwei Ausbaustufen geben - bald gibt es keine Begrenzung der
+      Versandgröße.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Auch die 2. Ausbaustufe wird fortlaufende Verbesserungen erfahren.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Dienstkennungen unterstützen das empfangende System bei der Zuordnung und
+      Automatisierung von Vorgängen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text33 | highlighter: searchText:'full'"></span> ist
+      sicher vor Manipulation und garantiert die Vertraulichkeit von
+      Nachrichten.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text33 | highlighter: searchText:'full'"></span>
+      stellt sicher, dass Teilnehmer schnell gefunden werden und prüft deren
+      Identität</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Nutzung von
+      <span [innerHtml]="text33 | highlighter: searchText:'full'"></span> ist
+      vergütet, was zur Beschleunigung digitaler Prozesse beitragen soll.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text33 | highlighter: searchText:'full'"></span> hat
+      enormes Digitalisierungspotential.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text33 | highlighter: searchText:'full'"></span> ist
+      mit jedem
+      <span [innerHtml]="text46 | highlighter: searchText:'full'"></span>- und
+      <span [innerHtml]="text47 | highlighter: searchText:'full'"></span
+      >-kompatibel.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Aktuell gibt es 14 zugelassene Anbieter der
+      <span [innerHtml]="text33 | highlighter: searchText:'full'"></span>.</span
+    >
+  </div>
+  <div class="text-container">
+    <span
+      >Alles rund um das
+      <span [innerHtml]="text36 | highlighter: searchText:'full'"></span>
+    </span>
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien
+      /Modul1/Woche3/Tag14/Anwendungen der TI:
+      <span [innerHtml]="text33 | highlighter: searchText:'full'"></span> und
+      <span [innerHtml]="text36 | highlighter: searchText:'full'"></span>/Folie
+      33 bis 45.
+    </span>
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf23()">Open PDF</button>
+    <button (click)="closePdf23()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show23"
+    [class.show]="show"
+    [src]="pdf12"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >eMP steht für elektronischer Medikationsplan (
+      <span [innerHtml]="text36 | highlighter: searchText:'full'"></span>)
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der
+      <span [innerHtml]="text36 | highlighter: searchText:'full'"></span>
+      beinhaltet Informationen zur Medikation und weitere medikatonsrelevanten
+      Daten.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der
+      <span [innerHtml]="text36 | highlighter: searchText:'full'"></span>
+      unterscheidet sich vom bundeseinheitlichen Medikationsplan, der 2016
+      eingeführt wurde.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der
+      <span [innerHtml]="text36 | highlighter: searchText:'full'"></span> ist
+      für Patienten verfügbar, die drei Medikamente oder mehr gleichzeitig
+      einnehmen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Es gibt Regelungen welche Arzneimittel im
+      <span [innerHtml]="text36 | highlighter: searchText:'full'"></span>
+      aufgeführt werden müssen.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Zur Verwendung des
+      <span [innerHtml]="text36 | highlighter: searchText:'full'"></span> durch
+      Leistungserbringer müssen die technischen Voraussetzungen erfüllt
+      sein.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Die Kosten für die Technik werden erstattet.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Einwilligung des Patienten ist unerlässlich für die Befüllung des
+      <span [innerHtml]="text36 | highlighter: searchText:'full'"></span>.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der Datensatz wird durch den Arzt, Zahnarzt oder Apotheker
+      angelegt.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der
+      <span [innerHtml]="text36 | highlighter: searchText:'full'"></span> gibt
+      schnell Aufschluss darüber, ob mehrere Arzneimittel miteinander
+      verträglich sind.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Feldtests für den
+      <span [innerHtml]="text36 | highlighter: searchText:'full'"></span> laufen
+      seit Mitte 2020.</span
+    >
   </div>
 </div>
