@@ -80,7 +80,7 @@ li {
 
 .text-container2 {
   height: 100px;
-  width: 200px;
+  width: 240px;
   background: hsl(11deg 100% 52%);
   border-radius: 16px;
   display: flex;
@@ -97,6 +97,7 @@ li {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 32px;
+  margin-top: 16px;
   flex-wrap: wrap;
 }
 
@@ -254,4 +255,26 @@ li {
     }
     transition: ease-in-out;
   }
+}
+
+.green {
+  background: #00fd00;
+  padding: 7px;
+  border-radius: 16px;
+  width: 100%;
+}
+.yellow {
+  background: #ecfd00;
+  padding: 7px;
+  border-radius: 16px;
+}
+.orange {
+  background: #fdc000;
+  padding: 7px;
+  border-radius: 16px;
+}
+.red {
+  background: hsl(11deg 100% 52%);
+  padding: 7px;
+  border-radius: 16px;
 }

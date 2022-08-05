@@ -1,4 +1,5 @@
 <div class="modul1-container">
+  <a href="/modul1/#test">go to div</a>
   <h1>Modul-1</h1>
   <div class="header">
     <h2>Die Landkarte im Gesundheitswesen</h2>
@@ -985,7 +986,7 @@
     <img
       src="assets/img/labor.png"
       [class.big-img]="bigImg"
-      (click)="showBidImg()"
+      (click)="showBigImg()"
     />
   </div>
   <div class="text-container">
@@ -1716,7 +1717,7 @@
     <img
       src="assets/img/csm_gematik_Website_Diagramme_01_cj_118cd299ca.png"
       [class.big-img]="bigImg"
-      (click)="showBidImg()"
+      (click)="showBigImg()"
     />
   </div>
   <div class="more-infos">
@@ -1773,7 +1774,7 @@
     <img
       src="assets/img/738x415_enlarge.jpg"
       [class.big-img]="bigImg"
-      (click)="showBidImg()"
+      (click)="showBigImg()"
     />
   </div>
   <div class="more-infos">
@@ -1838,7 +1839,7 @@
     <img
       src="assets/img/projekte.png"
       [class.big-img]="bigImg"
-      (click)="showBidImg()"
+      (click)="showBigImg()"
     />
   </div>
   <div class="more-infos">
@@ -2130,7 +2131,7 @@
     <img
       src="assets/img/interoperabilität.png"
       [class.big-img]="bigImg"
-      (click)="showBidImg()"
+      (click)="showBigImg()"
     />
   </div>
   <div class="text-container">
@@ -2150,7 +2151,7 @@
     <img
       src="assets/img/tabelleTi.png"
       [class.big-img]="bigImg"
-      (click)="showBidImg()"
+      (click)="showBigImg()"
     />
   </div>
   <div class="text-container">
@@ -2293,7 +2294,7 @@
     <img
       src="assets/img/tiPlan.png"
       [class.big-img]="bigImg"
-      (click)="showBidImg()"
+      (click)="showBigImg()"
     />
   </div>
   <div class="text-container">
@@ -2346,7 +2347,7 @@
     <img
       src="assets/img/bausteineTi.png"
       [class.big-img]="bigImg"
-      (click)="showBidImg()"
+      (click)="showBigImg()"
     />
   </div>
   <div class="more-infos">
@@ -2846,7 +2847,11 @@
   </div>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
-    <span>Das PVS-Update ist der erste Schritt zur Anbindung an die TI. </span>
+    <span
+      >Das
+      <span [innerHtml]="text47 | highlighter: searchText:'full'"></span>-Update
+      ist der erste Schritt zur Anbindung an die TI.
+    </span>
   </div>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
@@ -2939,7 +2944,7 @@
     <img
       src="assets/img/epastufen.png"
       [class.big-img]="bigImg"
-      (click)="showBidImg()"
+      (click)="showBigImg()"
     />
   </div>
   <div class="more-infos">
@@ -3522,6 +3527,1362 @@
       >Feldtests für den
       <span [innerHtml]="text36 | highlighter: searchText:'full'"></span> laufen
       seit Mitte 2020.</span
+    >
+  </div>
+  <div class="text-container">
+    <span
+      >Alles rund um das
+      <span [innerHtml]="text48 | highlighter: searchText:'full'"></span>
+    </span>
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien
+      /Modul1/Woche4/Tag16/Anwendungen der TI:
+      <span [innerHtml]="text48 | highlighter: searchText:'full'"></span> und
+      DEMIS/Folie 11 bis 28
+    </span>
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf24()">Open PDF</button>
+    <button (click)="closePdf24()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show24"
+    [class.show]="show"
+    [src]="pdf13"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der Notfalldatensatz beinhaltet Daten, die besonders im Notfall relevant
+      sind</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der Notfalldatensatz beinhaltet wichtige Informationen zu chronischen
+      erkrankungen oder Allergien.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die
+      <span [innerHtml]="text48 | highlighter: searchText:'full'"></span> können
+      optional erweitert werden, wo bestimmte Informationen zu finden
+      sind.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Daten werden auf der
+      <span [innerHtml]="text40 | highlighter: searchText:'full'"></span>
+      gespeichert und die Entscheidungsmacht liegt bei dem Patienten .</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Es gibt zahlreiche notfallrelevante Diagnosen oder Vorerkrankungen, die
+      im Notfall relevant sind</span
+    >
+  </div>
+  <div class="title">
+    <span>Vorteile und Funktionsweise </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der behandelnde Arzt hinterlegt die
+      <span [innerHtml]="text48 | highlighter: searchText:'full'"></span>
+      gemeinsam mit dem Patienten.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Bei dem Befüllen des Notfalldatensatzes müssen ein paar Grundsätze
+      beachtet werden.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Anzeige der
+      <span [innerHtml]="text48 | highlighter: searchText:'full'"></span> muss
+      immer angefordert werden.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Im Notfall kann der Arzt die Daten auch ohne die Zustimmung des Patienten
+      einsehen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Die Notfallszenarien sind von der Bundesärztekammer definiert.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Im Notfall zählt jede Sekunde, doch der Notfalldatensatz hat noch weitere
+      Vorteile.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Seit März 2020 laufen Feldtests für die Erprobung des Notfalldatensatzes.
+    </span>
+  </div>
+  <div class="text-container">
+    <span
+      >Alles rund um das
+      <span [innerHtml]="text37 | highlighter: searchText:'full'"></span>
+    </span>
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien
+      /Modul1/Woche4/Tag16/Anwendungen der TI:
+      <span [innerHtml]="text48 | highlighter: searchText:'full'"></span> und
+      <span [innerHtml]="text37 | highlighter: searchText:'full'"></span>/Folie
+      30 bis 55
+    </span>
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf25()">Open PDF</button>
+    <button (click)="closePdf25()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show25"
+    [class.show]="show"
+    [src]="pdf13"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text37 | highlighter: searchText:'full'"></span> steht
+      für Deutsche elektronisches Melde und Informationssystem für den
+      Infektionsschutz.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Das Infektionsschutzgesetz sieht ein System zur Meldung von Fällen
+      übertragbarer Krankheiten vor.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Das Infektionsschutzgesetz trat im Jahr 2001 in Kraft.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Eine Übertragung von Infektionszahlen zu COVID-19 dauerte bis zu zehn
+      Tage.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Auch die Dokumentation der Infektionsgeschehnisse war veraltet.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Bei Meldungen wird zwischen namentlichen und nichtnamentlichen Meldungen
+      unterschieden.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Das
+      <span [innerHtml]="text37 | highlighter: searchText:'full'"></span> ist
+      ein Projekt des RKI.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text37 | highlighter: searchText:'full'"></span>
+      betrachtet den Meldeweg vom Meldepflichtigen bis zum Robert-Koch-Institut
+      (RKI).</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die erste Ausbaustufe des
+      <span [innerHtml]="text37 | highlighter: searchText:'full'"></span> setzte
+      die elektronische Meldung von COVID-Erregernachweisen um
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die dezentrale
+      <span [innerHtml]="text37 | highlighter: searchText:'full'"></span
+      >-Infrastruktur beinhaltet Komponenten zur Übermittlung von
+      Meldedaten</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die zentralen Dienste unterstützen die Meldungsvorverarbeitung- und
+      zustellung.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Vorteile des
+      <span [innerHtml]="text37 | highlighter: searchText:'full'"></span>
+      beinhalten den schnelleren und vollständigen Informationsaustausch.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text37 | highlighter: searchText:'full'"></span>
+      erleichtert die Meldung an die Gesundheitsämter.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Für die Anbindung an
+      <span [innerHtml]="text37 | highlighter: searchText:'full'"></span> müssen
+      zwei Voraussetzungen erfüllt sein.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Bis Anfang 2022 sollen alle weiteren Erregernachweise von den Laboren
+      elektronisch gemeldet werden.</span
+    >
+  </div>
+  <div class="text-container">
+    <span
+      ><span [innerHtml]="text47 | highlighter: searchText:'full'"></span
+      >-Systemen</span
+    >
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche4/Tag18/PVS
+      Systeme.
+    </span>
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf26()">Open PDF</button>
+    <button (click)="closePdf26()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show26"
+    [class.show]="show"
+    [src]="pdf14"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="title">
+    <span
+      >Hintergrund zu
+      <span [innerHtml]="text47 | highlighter: searchText:'full'"></span
+      >-Systemen</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text47 | highlighter: searchText:'full'"></span
+      >-Systeme ewickelten sich aus Abrechnungssystemen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Zu den Hauptaufgaben der Praxissoftware gehört das Führen von
+      elektronischen Patientenakten.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Das
+      <span [innerHtml]="text47 | highlighter: searchText:'full'"></span>-System
+      unterstützt auch die ambulante Abrechnung bei den Ärzten.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Dafür sind zum Teil Schnittstellen zu anderen Systemen z.B der Labore
+      notwendig.</span
+    >
+  </div>
+  <div class="title">
+    <span>Wichtige Beispiele zu Schnittstellen</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>PADx-Schnittstelle (xml-basiert):</h3>
+      <ul>
+        <li>Datenaustausch im Bereich der privatärztlichen Abrechnung.</li>
+        <li>
+          XML-basiert (Ersatzsprache für HTML, Import und Export von
+          Anwendungsdaten) .
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>PAD-Schnittstelle (ASCII-basiert):</h3>
+      <ul>
+        <li>
+          Umwandlung von Rechnungen in das für die Abrechnungsstelle benötigte
+          Format per Knopfdruck.
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="title">
+    <span
+      >Was genau ist ein Praxisverwaltungssystem (kurz:
+      <span [innerHtml]="text47 | highlighter: searchText:'full'"></span
+      >).</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Das Praxisverwaltungssystem ist die Software, die niedergelassene Ärzte
+      bei der digitalen Organisation und Dokumentation des Praxisbetriebs
+      unterstützt.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Zu den abgebildeten Funktionen zählen die Verwaltung von Patientendaten,
+      die Buchhaltung samt Abrechnung erbrachter Leistungen oder die
+      Terminplanung.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Einsatz in: Einzelpraxen , Gemeinschaftspraxen und Medizinischen
+      Versorgungszentren.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >In Deutschland ist die
+      <span [innerHtml]="text16 | highlighter: searchText:'full'"></span> für
+      die Zertifizierung von
+      <span [innerHtml]="text47 | highlighter: searchText:'full'"></span
+      >-Systemen zuständig .
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Ein Praxisverwaltungssystem ist ein Verwaltungs- "Allrounder"</span>
+  </div>
+  <div class="img-container">
+    <img
+      src="assets/img/pvssystem.png"
+      [class.big-img]="bigImg"
+      (click)="showBigImg()"
+    />
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text47 | highlighter: searchText:'full'"></span>
+      Marktführer - CGM und Medatixx</span
+    >
+  </div>
+  <div class="title">
+    <span
+      >Ein Lastenheft ist die Zusammenstellung der Anforderungen, die ein
+      technisches Produkt erfüllen soll</span
+    >
+  </div>
+  <div class="img-container">
+    <img
+      src="assets/img/lastenheft1.png"
+      [class.big-img]="bigImg"
+      (click)="showBigImg()"
+    />
+  </div>
+  <div class="title">
+    <span
+      >Medizinische Dokumentation ist hochkomplex und notwendig für u.a. das
+      Qualitätsmanagement</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Steigende Notwendigkeit in der Qualitätssicherung durch Auswertung von
+      Daten für Medizincontrolling oder Qualitätsmanagement.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Bedarf an zeit -/und ortsunabhängiger Verfügbarkeit von Fremdbefunden,
+      Krankenhaus Berichten und technischen Untersuchungsberichten.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die digitale Patientenakte im
+      <span [innerHtml]="text47 | highlighter: searchText:'full'"></span> bringt
+      zahlreiche Vorteile .</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Daten werden in Form verschiedenster Dokumente gespeichert.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Bei der Dokumentation wollen wir idealerweise strukturierte Daten.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >In manchen Fällen können aber unstrukturierte Daten Sinn machen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Daten können auf verschiedenste Arten erfasst werden.</span>
+  </div>
+  <div class="title">
+    <span
+      >Bei der digitalen Dokumentation sind zwei Schutzziele zu beachten
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Authentizität.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Originalität.</span>
+  </div>
+  <div class="title">
+    <span>Der Patientenstamm ist das führende System für die Stammdaten </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der Patientenstamm ist das Verzeichnis aller Patientenstammdaten.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Müssen jederzeit für Patienten eingesehen werden können.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >PVS-System sollte in der Lage sein, Daten einzeln oder auch komplett für
+      alle Patienten zu exportieren.</span
+    >
+  </div>
+  <div class="title">
+    <span
+      >Zusätzlich zu den Stammdaten muss ein Fall bzw. Schein angelegt werden
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Arztfall (nach
+      <span [innerHtml]="text19 | highlighter: searchText:'full'"></span>)</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Behandlungsfall (nach
+      <span [innerHtml]="text19 | highlighter: searchText:'full'"></span>)</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Schein (nach
+      <span [innerHtml]="text19 | highlighter: searchText:'full'"></span>)</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Krankheitsfall(nach
+      <span [innerHtml]="text19 | highlighter: searchText:'full'"></span>)</span
+    >
+  </div>
+  <div class="title">
+    <span
+      >Dokumente werden durch das Dokumenten-ManagementSystem (
+      <span [innerHtml]="text49 | highlighter: searchText:'full'"></span> )
+      verwaltet
+    </span>
+  </div>
+  <div class="img-container">
+    <img
+      src="assets/img/dms.png"
+      [class.big-img]="bigImg"
+      (click)="showBigImg()"
+    />
+  </div>
+  <div class="title">
+    <span
+      ><span [innerHtml]="text47 | highlighter: searchText:'full'"></span>
+      müssen Anforderungskatalog der kassenärztlichen Bundesvereinigung (
+      <span [innerHtml]="text16 | highlighter: searchText:'full'"></span> )
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Durch die TI ergeben sich neue Anforderungen an
+      <span [innerHtml]="text47 | highlighter: searchText:'full'"></span>
+      Systeme.</span
+    >
+  </div>
+  <div class="text-container">
+    <span>Einführung in Verwaltungssysteme</span>
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche4/Tag19/Einführung
+      in Verwaltungssysteme.
+    </span>
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf27()">Open PDF</button>
+    <button (click)="closePdf27()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show27"
+    [class.show]="show"
+    [src]="pdf15"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="info-block">
+    <h3>
+      Ein Managementsystem umfasst die systematische Planung , Steuerung und
+      Umsetzung von Aufgaben und Tätigkeiten.
+    </h3>
+    <ul>
+      <li>Zum zuverlässigen Erreichen der Unternehmensziele.</li>
+      <li>Unterschiedliche Blickwinkel je nach Anwendungsbereich.</li>
+    </ul>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Das Terminmanagementsystem ermöglicht unter anderem die Online-Buchung
+      eines Arzttermins.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Online Terminbuchung gibt dem arzt und der Praxis Zeit und
+      Übersichtlichkeit.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Auch dem Patienten wird eine Problemlose Terminvereinbarung ermöglicht.
+    </span>
+  </div>
+  <div class="info-block">
+    <h3>Manche Anbieter ermöglichen die Anbindung an die Praxissoftware.</h3>
+    <ul>
+      <li>Schnittstelle jameda und medatixx, samedi, EVIDENT.</li>
+      <li>
+        Übertragung der gebuchten Termine direkt in das
+        <span [innerHtml]="text47 | highlighter: searchText:'full'"></span>.
+      </li>
+      <li>Patientengewinnung auch unabhängig von der Praxishomepage.</li>
+    </ul>
+  </div>
+  <h3>Warum das wichtig ist:</h3>
+  <div class="info-block">
+    <h3>
+      Der Arzt muss in seinem Kalender angeben, welche Sprechzeit buchbar ist
+    </h3>
+    <ul>
+      <li>Für welchen Besuchsgrund.</li>
+      <li>Für welche Versicherung .</li>
+    </ul>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Für die Anbindung an die Praxissoftware gibt es unterschiedliche
+      Möglichkeiten.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Für den Arzt ist das Angebot der Online-Terminbuchung einfach für den
+      Patienten zugänglich zu machen.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Für den Arzt ist das Angebot der Online-Terminbuchung sehr einfach
+      einzustellenf.
+    </span>
+  </div>
+  <div class="title">
+    <span>Dienstplanungssysteme</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Dienstplanungssysteme sorgen für die transparente Planung von
+      Arbeitszeiten.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Dienstplanungssysteme sorgen für eine bessere Work-Life-Balance.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Im System werden dafür verschiedene Eingenschaften hinterlegt. </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Atoss ist der Marktführer bei den Dienstplanungssystemen. </span>
+  </div>
+  <div class="title">
+    <span>Prozessverwaltung </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Workflow Management dient dazu, Standardprozesse in medizinischen
+      Einrichtungen zu digitalisieren.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>
+        <span [innerHtml]="text50 | highlighter: searchText:'full'"></span
+        >:führender Forschungseinrichtung für klinisches Prossesmanegemant und
+        Organisationsentwicklung.
+      </h3>
+      <ul>
+        <li>Unterstützung von Kliniken zum Denken in Prozessen.</li>
+        <li>Für effiziente Abläufe in Kliniken.</li>
+        <li>Fehlerfreie Prozesse.</li>
+        <li>Sicherstellung hoher Qualität</li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Von der Aufnahme bis zur Entlassung: Behandlungsexzellenz wird Standard -
+      KUMI.
+    </span>
+  </div>
+  <div class="title">
+    <span>Warenverwaltung</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Inventory Management Systeme zeigen den Warenbestand von jeweiligen
+      Arzneimitteln an.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >IoT steht für "Internet of Things" , sprich Internet der Dinge.
+    </span>
+  </div>
+  <div class="title">
+    <span>Datenverwaltung</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Dateimanagementsysteme wandeln medizinische Rohdaten und Bilder in
+      aussagekräftige Informationen um.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Patientendaten können somit einheitlich bereitgestellt und eingesehen
+      werden.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Beispiel Radiomics: Dient der Analyse von quantitativen Bildmerkmalen von
+      großen medizinischen Bilddatenbanken.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Datenverwaltung konzentriert sich auf Technologien und Prozesse zur
+      Analyse von Gesundheitsdaten.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Datenanalyse ist wichtig für den Patienten und den Leistungserbringer.
+    </span>
+  </div>
+  <div class="title">
+    <span>Dokumentenverwaltung</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>
+        QM Dokumentenmanagement ist für das Teilen und zur Lenkung von
+        Dokumenten
+      </h3>
+      <ul>
+        <li>Verringerung der Reaktionszeit.</li>
+        <li>Kein Verlust von Dokumenten.</li>
+        <li>Weniger Lagerplatz für Aufzeichnungen.</li>
+        <li>
+          Speicherung von Papierdokumentationen in sicheren und strukturierten
+          Systemen.
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>Dokumentenlenkung mit intralean medical</h3>
+      <ul>
+        <li>Sicherstellung und Lenkung des Informationsflusses.</li>
+        <li>Automatisierte QM-Prozesse.</li>
+        <li>Einfache Steuerung und Bewertung von Aufgaben und Meldungen.</li>
+        <li>Überwachung von Schulungen und Ausbildungen der Mitarbeiter.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="text-container">
+    <span>
+      <span [innerHtml]="text46 | highlighter: searchText:'full'"></span>
+      System Erklärung und Hintergrund</span
+    >
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche5/Tag21/Einführung
+      in KIS-Systeme.
+    </span>
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf28()">Open PDF</button>
+    <button (click)="closePdf28()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show28"
+    [class.show]="show"
+    [src]="pdf16"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Ein
+      <span [innerHtml]="text46 | highlighter: searchText:'full'"></span>-System
+      ist quasi das stationäre Pendant zum
+      <span [innerHtml]="text47 | highlighter: searchText:'full'"></span
+      >-System.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>
+        Ein
+        <span [innerHtml]="text47 | highlighter: searchText:'full'"></span
+        >-System für Kliniken bietet:
+      </h3>
+      <ul>
+        <li>Erfassung,</li>
+        <li>Speicherung,</li>
+        <li>Bearbeitung,und</li>
+        <li>
+          Nutzung aller relevanten medizinischer und administrativer
+          Patientendaten im Krankenhaus.
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Entsprechend ähnlich zum
+      <span [innerHtml]="text47 | highlighter: searchText:'full'"></span> sieht
+      es aus - hier am Beispiel Dedalus ORBIS AddOn Showroom</span
+    >
+  </div>
+  <div class="img-container">
+    <img
+      src="assets/img/dedalus.png"
+      [class.big-img]="bigImg"
+      (click)="showBigImg()"
+    />
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Es besteht Druck zum Wechsel von der Papierakte auf das
+      <span [innerHtml]="text46 | highlighter: searchText:'full'"></span
+      >-System</span
+    >
+  </div>
+  <div class="title">
+    <span
+      >Die vielfältigen Chancen der Digitalisierung durch
+      <span [innerHtml]="text46 | highlighter: searchText:'full'"></span
+      >-Systeme.</span
+    >
+  </div>
+  <div class="img-container">
+    <img
+      src="assets/img/kis2.png"
+      [class.big-img]="bigImg"
+      (click)="showBigImg()"
+    />
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text46 | highlighter: searchText:'full'"></span
+      >-Systeme können Medizinprodukte und zertifizierungspflichtig sein.</span
+    >
+  </div>
+  <div class="title">
+    <span
+      >Wie ist ein Krankenhausinformationssystem (
+      <span [innerHtml]="text46 | highlighter: searchText:'full'"></span> )
+      aufgebaut?</span
+    >
+  </div>
+  <div class="img-container">
+    <img
+      src="assets/img/kis3.png"
+      [class.big-img]="bigImg"
+      (click)="showBigImg()"
+    />
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Rechte-Rollen-Konzepte definieren, wer was im
+      <span [innerHtml]="text46 | highlighter: searchText:'full'"></span> machen
+      darf .</span
+    >
+  </div>
+  <div class="title">
+    <span
+      >Der
+      <span [innerHtml]="text46 | highlighter: searchText:'full'"></span
+      >-Anbietermarkt</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der Markt für
+      <span [innerHtml]="text46 | highlighter: searchText:'full'"></span
+      >-Systeme hat sich in den letzten Jahren stark konsolidiert.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Es gibt zwei möglischkeiten
+      <span [innerHtml]="text46 | highlighter: searchText:'full'"></span> zu
+      erwerben:Mieten oder Kaufen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der Platzhirsch unter den
+      <span [innerHtml]="text46 | highlighter: searchText:'full'"></span
+      >-Anbietern ist Dedalus Holding mit ORBIS</span
+    >
+  </div>
+  <div class="text-container">
+    <span
+      >Vertiefung von
+      <span [innerHtml]="text46 | highlighter: searchText:'full'"></span
+      >-Systemen</span
+    >
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche5/Tag22/Vertiefung
+      von
+      <span [innerHtml]="text46 | highlighter: searchText:'full'"></span
+      >-Systemen.
+    </span>
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf29()">Open PDF</button>
+    <button (click)="closePdf29()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show29"
+    [class.show]="show"
+    [src]="pdf17"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="title">
+    <span
+      >Modularer Aufbau eines
+      <span [innerHtml]="text46 | highlighter: searchText:'full'"></span
+    ></span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Ein
+      <span [innerHtml]="text46 | highlighter: searchText:'full'"></span>-System
+      hat zahlreiche Module</span
+    >
+  </div>
+  <div class="img-container">
+    <img
+      src="assets/img/kis4.png"
+      [class.big-img]="bigImg"
+      (click)="showBigImg()"
+    />
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Das Potential eines
+      <span [innerHtml]="text46 | highlighter: searchText:'full'"></span
+      >-systems wird nicht ausgeschöpft.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>Die aktuelle Wirklichkeit sieht jedoch meist anders aus.</h3>
+      <ul>
+        <li>
+          Häufig ungenutzte Möglichkeiten des Einweisungsscheins z.B. Diagnose,
+          Medikamente, Anamnese.
+        </li>
+        <li>
+          Informationen über die aktuelle Medikation wird oft vom Patienten auf
+          einem Zettelchen in der Brieftasche vorgelegt (inklusiver Korrekturen
+          und Dosis Veränderungen).
+        </li>
+        <li>
+          Übergabe von radiologischen Untersuchungen an den Patienten oft auf
+          einer CD (ohne schriftlichen Befund).
+        </li>
+        <li>
+          Entsprechende Technik für ein Auslesen der CD im Krankenhaus selten
+          verfügbar (unterschiedliche Dateiformate, keine Standardisierung) .
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Nur 35,5% der Archive werden durch IT-Systeme verwaltet.</span>
+  </div>
+  <div class="title">
+    <span
+      >Kein
+      <span [innerHtml]="text46 | highlighter: searchText:'full'"></span>
+      funktioniert ohne Standards - hier zwei Beispiele.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>DICOM-Standard.</h3>
+      <ul>
+        <li>Für Daten von RadiologieSystemen.</li>
+        <li>
+          Weltweit anerkannter Standard in der medizinischen Bildverarbeitung
+          (Erzeugung, Übertragung, Verarbeitung und Speicherung von digitalen
+          Bildern in der Medizin).
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>Nachrichtenstandard HL7v2 /HL7v3.</h3>
+      <ul>
+        <li>
+          Harmonisierung des Messagings medizinischer Informationssysteme
+          untereinander.
+        </li>
+        <li>Unabhängigkeit von Herstellern.</li>
+        <li>
+          Einfachere Übertragung von Informationen zwischen mehreren
+          Gesundheitseinrichtungen.
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="text-container">
+    <span
+      >Digitale Gesundheits- und Pflegeanwendungen (<span
+        [innerHtml]="text51 | highlighter: searchText:'full'"
+      ></span>
+      &
+      <span [innerHtml]="text52 | highlighter: searchText:'full'"></span>)</span
+    >
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche5/Tag24/Digitale
+      Gesundheits- und Pflegeanwendungen.
+    </span>
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf30()">Open PDF</button>
+    <button (click)="closePdf30()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show30"
+    [class.show]="show"
+    [src]="pdf18"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="title">
+    <span
+      >Was sind
+      <span [innerHtml]="text51 | highlighter: searchText:'full'"></span>?</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Digitale Gesundheitsanwendungen unterstützen Patienten bei der Erkennung
+      und Behandlung von Krankheiten.</span
+    >
+  </div>
+  <div class="title">
+    <span>Insgesamt werden Medizinprodukte in vier Klassen eingeteilt</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span class="green">Klasse I:Geringes Risiko,Nicht Invasiv.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span class="yellow"
+      >Klasse IIa:Mittleres Risiko,Nicht invasiv oder nicht invasiv zur
+      kurzzeitigen Anwendung.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span class="orange"
+      >Klasse IIb:erhötes Risiko,implantierbar und/oder invasiv zur langzeitigen
+      Anwendung.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span class="red"
+      >Klasse III:Hohes Risiko,implantierbar und/oder invasiv zur langzeitigen
+      Anwendung.</span
+    >
+  </div>
+  <div class="title">
+    <span>Wann ist eine App ein Medizinprodukt?</span>
+  </div>
+  <div class="img-container">
+    <img
+      src="assets/img/digaORnot.png"
+      [class.big-img]="bigImg"
+      (click)="showBigImg()"
+    />
+  </div>
+  <div class="title">
+    <span>Zulassung der DiGas</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Kosten für die
+      <span [innerHtml]="text51 | highlighter: searchText:'full'"></span>s
+      übernehmen die gesetzlichen Krankenkassen, wenn die Anforderungen erfüllt
+      sind.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Zulassung der
+      <span [innerHtml]="text51 | highlighter: searchText:'full'"></span>s
+      erfolgt nach erfolgreich bestandenem Prüfverfahren.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Zulassung von
+      <span [innerHtml]="text51 | highlighter: searchText:'full'"></span>s
+      erfolgt nach Fast Track Verfahren.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Der Leistungsanspruch der
+      <span [innerHtml]="text51 | highlighter: searchText:'full'"></span>s ist
+      in § 33a SGB V definiert.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Ärzte und Therapeuten müssen bei der Verschreibung von
+      <span [innerHtml]="text51 | highlighter: searchText:'full'"></span>s
+      aufpassen.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text51 | highlighter: searchText:'full'"></span>s
+      können dem Patienten direkt vom Arzt verschrieben werden.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text51 | highlighter: searchText:'full'"></span>s
+      können alternativ auch vom Versicherten bei der Krankenkasse beantragt
+      werden .</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text20 | highlighter: searchText:'full'"></span>
+      Ziffern für DiGas ermöglichen die Abrechnung seit Januar 2021.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Zugelassene
+      <span [innerHtml]="text51 | highlighter: searchText:'full'"></span>s sind
+      im DiGa Verzeichnis aufgelistet.</span
+    >
+  </div>
+  <div class="title">
+    <span
+      ><span [innerHtml]="text52 | highlighter: searchText:'full'"></span
+    ></span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Digitale Pflegeanwendungen (<span
+        [innerHtml]="text52 | highlighter: searchText:'full'"
+      ></span
+      >) sind Programme, die Pflegebedürftigen, Angehörigen und Pflegediensten
+      übers Handy oder Internet helfen, die Selbstständigkeit von
+      Pflegebedürftigen zu fördern und einer Verschlimmerung der
+      Pflegebedürftigkeit entgegenzuwirken.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text52 | highlighter: searchText:'full'"></span> sind
+      derzeit nur für die ambulante Pflege erstattungsfähig. Der Anspruch auf
+      eine
+      <span [innerHtml]="text52 | highlighter: searchText:'full'"></span> und
+      eventuell notwendige ergänzende Unterstützungsleistung ist auf 50 €
+      monatlich begrenzt.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Leistung gibt es auf Antrag bei der Pflegekasse, wenn die
+      <span [innerHtml]="text52 | highlighter: searchText:'full'"></span> beim
+      <span [innerHtml]="text8 | highlighter: searchText:'full'"></span>gelistet
+      ist.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Mit den ersten zugelassenen
+      <span [innerHtml]="text52 | highlighter: searchText:'full'"></span>s kann
+      frühestens im Sommer gerechnet werden.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Bsp. Ein Sensor benachrichtigt den pflegenden Angehörigen über die App,
+      wann das Inkontinenzmaterial gewechselt werden muss.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Digitalisierung wird für
+      <span [innerHtml]="text51 | highlighter: searchText:'full'"></span>s und
+      <span [innerHtml]="text52 | highlighter: searchText:'full'"></span>
+      vorangetrieben</span
     >
   </div>
 </div>

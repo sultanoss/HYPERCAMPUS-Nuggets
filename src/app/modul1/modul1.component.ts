@@ -29,6 +29,13 @@ export class Modul1Component implements OnInit {
   show21: boolean = false;
   show22: boolean = false;
   show23: boolean = false;
+  show24: boolean = false;
+  show25: boolean = false;
+  show26: boolean = false;
+  show27: boolean = false;
+  show28: boolean = false;
+  show29: boolean = false;
+  show30: boolean = false;
 
   bigImg: boolean = false;
 
@@ -44,6 +51,12 @@ export class Modul1Component implements OnInit {
   pdf10 = 'assets/pdf/Aufbau der Telematikinfrastruktur Teil II.pdf';
   pdf11 = 'assets/pdf/Anwendungen der TI E-Patientenakte und eRezept.pdf';
   pdf12 = 'assets/pdf/Anwendungen der TI KIM und E-Medikationsplan.pdf';
+  pdf13 = 'assets/pdf/Anwendungen der TI_Notfalldaten und DEMIS.pdf';
+  pdf14 = 'assets/pdf/PVS Systeme.pdf';
+  pdf15 = 'assets/pdf/Einführung in Verwaltungssysteme.pdf';
+  pdf16 = 'assets/pdf/Einführung in KIS-Systeme.pdf';
+  pdf17 = 'assets/pdf/Vertiefung von KIS - Systemen.pdf';
+  pdf18 = 'assets/pdf/Digitale Gesundheits- und Pflegeanwendungen.pdf';
 
   title = 'highlight-text';
 
@@ -97,13 +110,17 @@ export class Modul1Component implements OnInit {
   text45 = `e-Rezept`;
   text46 = `KIS`;
   text47 = `PVS`;
-
+  text48 = `Notfalldaten`;
+  text49 = `DMS`;
+  text50 = `IWiG`;
+  text51 = `DiGa`;
+  text52 = `DiPas`;
 
   constructor() {}
 
   ngOnInit(): void {}
 
-  showBidImg() {
+  showBigImg() {
     this.bigImg = !this.bigImg;
   }
 
@@ -244,5 +261,47 @@ export class Modul1Component implements OnInit {
   }
   closePdf23() {
     this.show23 = false;
+  }
+  openPdf24() {
+    this.show24 = true;
+  }
+  closePdf24() {
+    this.show24 = false;
+  }
+  openPdf25() {
+    this.show25 = true;
+  }
+  closePdf25() {
+    this.show25 = false;
+  }
+  openPdf26() {
+    this.show26 = true;
+  }
+  closePdf26() {
+    this.show26 = false;
+  }
+  openPdf27() {
+    this.show27 = true;
+  }
+  closePdf27() {
+    this.show27 = false;
+  }
+  openPdf28() {
+    this.show28 = true;
+  }
+  closePdf28() {
+    this.show28 = false;
+  }
+  openPdf29() {
+    this.show29 = true;
+  }
+  closePdf29() {
+    this.show29 = false;
+  }
+  openPdf30() {
+    this.show30 = true;
+  }
+  closePdf30() {
+    this.show30 = false;
   }
 }
