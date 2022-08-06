@@ -1,5 +1,4 @@
 <div class="modul1-container">
-  <a href="/modul1/#test">go to div</a>
   <h1>Modul-1</h1>
   <div class="header">
     <h2>Die Landkarte im Gesundheitswesen</h2>
@@ -9,7 +8,71 @@
 <div class="gw-akteure">
   <div class="search-input">
     <label for="">Search here: </label>
-    <input [(ngModel)]="searchText" type="search" />
+    <input
+      [(ngModel)]="searchText"
+      type="search"
+      placeholder="Bitte geben Sie Suchbegriffe ein aus der Suchbegriffe-Liste"
+    />
+  </div>
+  <div class="btns">
+    <button (click)="showSearchList()" class="btn1">Suchbegriffe Liste</button>
+    <img
+      *ngIf="showList"
+      (click)="hideSearchList()"
+      src="assets/img/close-window-32.png"
+    />
+  </div>
+
+  <div *ngIf="showList" class="search-options">
+    <span>{{ text2 }}</span>
+    <span>{{ text3 }}</span>
+    <span>{{ text4 }}</span>
+    <span>{{ text5 }}</span>
+    <span>{{ text6 }}</span>
+    <span>{{ text7 }}</span>
+    <span>{{ text8 }}</span>
+    <span>{{ text53 }}</span>
+    <span>{{ text12 }}</span>
+    <span>{{ text13 }}</span>
+    <span>{{ text14 }}</span>
+    <span>{{ text15 }}</span>
+    <span>{{ text16 }}</span>
+    <span>{{ text17 }}</span>
+    <span>{{ text18 }}</span>
+    <span>{{ text19 }}</span>
+    <span>{{ text20 }}</span>
+    <span>{{ text21 }}</span>
+    <span>{{ text22 }}</span>
+    <span>{{ text23 }}</span>
+    <span>{{ text24 }}</span>
+    <span>{{ text25 }}</span>
+    <span>{{ text26 }}</span>
+    <span>{{ text27 }}</span>
+    <span>{{ text28 }}</span>
+    <span>{{ text29 }}</span>
+    <span>{{ text30 }}</span>
+    <span>{{ text31 }}</span>
+    <span>{{ text32 }}</span>
+    <span>{{ text33 }}</span>
+    <span>{{ text34 }}</span>
+    <span>{{ text35 }}</span>
+    <span>{{ text36 }}</span>
+    <span>{{ text37 }}</span>
+    <span>{{ text38 }}</span>
+    <span>{{ text39 }}</span>
+    <span>{{ text40 }}</span>
+    <span>{{ text41 }}</span>
+    <span>{{ text42 }}</span>
+    <span>{{ text43 }}</span>
+    <span>{{ text44 }}</span>
+    <span>{{ text45 }}</span>
+    <span>{{ text46 }}</span>
+    <span>{{ text47 }}</span>
+    <span>{{ text48 }}</span>
+    <span>{{ text49 }}</span>
+    <span>{{ text50 }}</span>
+    <span>{{ text51 }}</span>
+    <span>{{ text52 }}</span>
   </div>
   <div
     class="text-container"

@@ -278,3 +278,49 @@ li {
   padding: 7px;
   border-radius: 16px;
 }
+.search-options {
+  display: flex;
+  align-self: center;
+  margin-bottom: 20px;
+  align-items: center;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: center;
+  span {
+    margin: 8px;
+    font-weight: bold;
+    background-color: #2f8aea;
+    padding: 8px;
+    border-radius: 16px;
+    width: 145px;
+    text-align: center;
+    color: white;
+  }
+}
+
+.btns {
+  display: flex;
+  width: 500px;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 20px;
+  align-items: center;
+
+  img{
+    height: 32px;
+    cursor: pointer;
+  }
+}
+
+.btn1 {
+  width: 130px;
+  align-self: center;
+  border: none;
+  background: #ff370a;
+  margin: 5px;
+  border-radius: 16px;
+  padding: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}

@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./modul1.component.scss'],
 })
 export class Modul1Component implements OnInit {
+  showList:boolean = false;
   show: boolean = false;
   show2: boolean = false;
   show3: boolean = false;
@@ -115,10 +116,18 @@ export class Modul1Component implements OnInit {
   text50 = `IWiG`;
   text51 = `DiGa`;
   text52 = `DiPas`;
+  text53 = `PKV`;
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  showSearchList(){
+    this.showList = true;
+  }
+  hideSearchList(){
+    this.showList = false;
+  }
 
   showBigImg() {
     this.bigImg = !this.bigImg;
