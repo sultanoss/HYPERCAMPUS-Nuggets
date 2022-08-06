@@ -15,6 +15,7 @@ export class HighlighterPipe implements PipeTransform {
     else{
       const re = new RegExp(args, 'igm');
       value= value.replace(re, '<span class="highlighted-text">$&</span>');
+
     }
 
       return value;

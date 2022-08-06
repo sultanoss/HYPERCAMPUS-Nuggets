@@ -22,57 +22,14 @@
       src="assets/img/close-window-32.png"
     />
   </div>
-
-  <div *ngIf="showList" class="search-options">
-    <span>{{ text2 }}</span>
-    <span>{{ text3 }}</span>
-    <span>{{ text4 }}</span>
-    <span>{{ text5 }}</span>
-    <span>{{ text6 }}</span>
-    <span>{{ text7 }}</span>
-    <span>{{ text8 }}</span>
-    <span>{{ text53 }}</span>
-    <span>{{ text12 }}</span>
-    <span>{{ text13 }}</span>
-    <span>{{ text14 }}</span>
-    <span>{{ text15 }}</span>
-    <span>{{ text16 }}</span>
-    <span>{{ text17 }}</span>
-    <span>{{ text18 }}</span>
-    <span>{{ text19 }}</span>
-    <span>{{ text20 }}</span>
-    <span>{{ text21 }}</span>
-    <span>{{ text22 }}</span>
-    <span>{{ text23 }}</span>
-    <span>{{ text24 }}</span>
-    <span>{{ text25 }}</span>
-    <span>{{ text26 }}</span>
-    <span>{{ text27 }}</span>
-    <span>{{ text28 }}</span>
-    <span>{{ text29 }}</span>
-    <span>{{ text30 }}</span>
-    <span>{{ text31 }}</span>
-    <span>{{ text32 }}</span>
-    <span>{{ text33 }}</span>
-    <span>{{ text34 }}</span>
-    <span>{{ text35 }}</span>
-    <span>{{ text36 }}</span>
-    <span>{{ text37 }}</span>
-    <span>{{ text38 }}</span>
-    <span>{{ text39 }}</span>
-    <span>{{ text40 }}</span>
-    <span>{{ text41 }}</span>
-    <span>{{ text42 }}</span>
-    <span>{{ text43 }}</span>
-    <span>{{ text44 }}</span>
-    <span>{{ text45 }}</span>
-    <span>{{ text46 }}</span>
-    <span>{{ text47 }}</span>
-    <span>{{ text48 }}</span>
-    <span>{{ text49 }}</span>
-    <span>{{ text50 }}</span>
-    <span>{{ text51 }}</span>
-    <span>{{ text52 }}</span>
+  <div class="show-list-container">
+    <div
+      [class.show-list]="showList"
+      class="search-options"
+      *ngFor="let collection of searchCollection"
+    >
+      <span (click)="addSearchText(collection)">{{ collection }}</span>
+    </div>
   </div>
   <div
     class="text-container"
@@ -1829,8 +1786,11 @@
   <div class="title">
     <span
       >Die Gesellschafter setzen sich aus dem
-      <span [innerHtml]="text34 | highlighter: searchText:'full'"></span> und
-      den Spitzenorganisationen des Gesundheitswesens zusammen</span
+      <span
+        id="BMG"
+        [innerHtml]="text34 | highlighter: searchText:'full'"
+      ></span>
+      und den Spitzenorganisationen des Gesundheitswesens zusammen</span
     >
   </div>
   <div class="img-container">
@@ -4948,4 +4908,730 @@
       vorangetrieben</span
     >
   </div>
+  <div class="text-container">
+    <span>Was sind Videosprechstunden? </span>
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien
+      /Modul1/Woche6/Tag26/Telemedizinische Anwendungen am Beispiel
+      Videosprechstunde.
+    </span>
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf31()">Open PDF</button>
+    <button (click)="closePdf31()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show31"
+    [class.show]="show"
+    [src]="pdf19"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Videosprechstunde ist die datenschutzkomforme Verbindung zwischen Arzt
+      und Patient.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>Definition der Kassenärztlichen Vereinigung:</h3>
+      <ul>
+        <li>
+          Synchrone Kommunikation zwischen einem Arzt und einem ihm bekannten
+          Patienten über die dem Patienten zur Verfügung stehende technische
+          Ausstattung, ggf. unter Assistenz, im Sinne einer Online-
+          Videosprechstunde in Echtzeit.
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Videosprechstunde wurde erst seit dem Jahr 2016 von der Regierung
+      gefördert.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>
+        Das Fernbehandlungsverbot wurde im Mai 2008 beim 121. Deutschen Ärztetag
+        aufgehoben.
+      </h3>
+      <ul>
+        <li>
+          Fernbehandlungsverbot = Ärzte dürfen Patienten nur dann online
+          behandeln, wenn sie dem Arzt bereits persönlich vorgetreten sind.
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Für die Nutzung der Videosprechstunde müssen technische und fachliche
+      Anforderungen erfühlt sein.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >die technische Anforderungen sind in §4 Anlage 31b Bundesmatelvertrag für
+      Ärzte (
+      <span [innerHtml]="text54 | highlighter: searchText:'full'"></span>-Ä )
+      niedergeschrieben.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Es dürfen ausschließlich Videosprechstunden über zertifizierte
+      Videodienstanbieter verwendet werden.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Weiter Bedingungen müssen vom Dienstanbieter eingehalten werde um
+      zertifiziert zu werden.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Die Videosprechstunde erfolgt über eine Webanwendung.</span>
+  </div>
+  <div class="title">
+    <span
+      >Die Videosprechstunde eignet sich für zahlreiche Behandlungsfälle.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Beratungsgespräch z.B. zu Kinderwunsch, Schwangerschaft.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Einholen einer Zweitmeinung.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Nachsorge nach Operation (z.B. Wundkontrolle).</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Patienten mit chronischen Erkrankungen.</span>
+  </div>
+  <div class="title">
+    <span
+      >Für manche medizinische Bereiche eignet sich die Videosprechstunde
+      besonders gut</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Psychotherapie --> Rein sprechende Medizin.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Dermatologie --> Sehr visuell geprägt.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Allgemeinmedizin --> Erkältung, Husten, Besprechung von
+      Blutbefunden.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Männermedizin --> Verschreibung von Potenzmitteln etc.</span>
+  </div>
+  <div class="title">
+    <span
+      >Eine Krankschreibung ist auch über eine Videosprechstunde möglich</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>Seit Oktober 2020 unter folgenden Bedingungen:</h3>
+      <ul>
+        <li>Patient ist in der Arztpraxis bekannt.</li>
+        <li>
+          Die Erkrankung lässt eine Beurteilung per Video zu, z.B. Erkältungen,
+          Magen-Darm-Beschwerden, Migräne.
+        </li>
+        <li>Krankschreibung für maximal 7 Tage.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Auch Rezepte können über die Videosprechstunde ausgestellt werden.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Videosprechstunde sorgt somit für zahlreiche Vorteile für Behandler
+      und Patienten.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Ärzte können die Behandlung über Videosprechstunden abrechnen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Grund-, Versicherten-, Kosiliarpauschale wird auch bei
+      Videosprechstunden gezahlt.</span
+    >
+  </div>
+  <div class="title">
+    <span>Videosprechstunden in der Pandemie</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Corona sorgt für rasanten Anstieg der Videosprechstunden.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Dennoch bleiben Hürden zur Akzeptanz der Videobehandlung.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Es gibt auch reine Telemedizinplattformen, die sich in den deutschen
+      Markt drängen.</span
+    >
+  </div>
+  <div class="title">
+    <span
+      ><span [innerHtml]="text55 | highlighter: searchText:'full'"></span>
+      umfasst mehr als nur Videosprechstunden</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text55 | highlighter: searchText:'full'"></span> =
+      Teilbereich der Telematik im Gesundheitswesen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text51 | highlighter: searchText:'full'"></span> =
+      Diagnostik und Therapie unter Überbrückung einer räumlichen oder
+      zeitlichen Distanz zwischen Arzt, Therapeut, Apotheker und Patienten oder
+      zwischen zwei sich konsultierenden Ärzten mittels Telekommunikation.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Überwachung von Patienten mit einem Defibrillator oder CRT-System.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Telekonsile (Digitalen fachlichen Beratungen zwischen mehreren Ärzten der
+      gleichen oder verschiedener Fachrichtungen).</span
+    >
+  </div>
+  <div class="title">
+    <span
+      >Die Überwachung der Patienten oder Telekonsile unterscheiden sich zur
+      Videosprechstunde</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Telemedizinische Überprüfung.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Telekonsile.</span>
+  </div>
+  <div class="text-container">
+    <span>Was ist medizinische Bildverarbeitung? </span>
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien
+      /Modul1/Woche6/Tag27/Medizinische Bild-und Datenverarbeitung.
+    </span>
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf32()">Open PDF</button>
+    <button (click)="closePdf32()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show32"
+    [class.show]="show"
+    [src]="pdf20"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="title">
+    <span
+      >Die medizinische Bildverarbeitung kann in fünf Bereiche eingeteilt
+      werden</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Bilderzeugung.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Bilddarstellung.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Bildauswertung.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Bildbearbeitung.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Bildspeicherung.</span>
+  </div>
+  <div class="title">
+    <span
+      ><span [innerHtml]="text56 | highlighter: searchText:'full'"></span>
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Röntgenstrahlung wurde 1895 durch W. Röntgen zum ältesten,
+      bildgebenden Verfahren in der Medizin.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text56 | highlighter: searchText:'full'"></span> ist
+      eine radiologische Untersuchung, bei der das Körpergewebe mit
+      Röntgenstrahlen durchleuchtet wird.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Digitale Radiographie wurde mit dem Ziel eingeführt, Röntgenbilder in
+      digitaler Form bereitzustellen.
+    </span>
+  </div>
+  <div class="title">
+    <span>
+      <span [innerHtml]="text57 | highlighter: searchText:'full'"></span
+    ></span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die
+      <span [innerHtml]="text57 | highlighter: searchText:'full'"></span>
+      erlaubt eine überlagerungsfreie Darstellung von einzelnen Körperschichten.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Eingeführt: 1976 von Godfrey Hounsfield.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Tomographie” = Schichtuntersuchung.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Funktionsprinzip: Basierend auf einer um den Patienten rotierenden
+      Röntgenröhre.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>TUmrechnung der gemessenen Rohsignale in Schichtbilder.</span>
+  </div>
+  <div class="title">
+    <span
+      ><span [innerHtml]="text58 | highlighter: searchText:'full'"></span>
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text58 | highlighter: searchText:'full'"></span> =
+      Magnetresonanztomographie.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Basierend auf dem Prinzip der kernmagnetischen Resonanz.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text58 | highlighter: searchText:'full'"></span> hat
+      wesentlich verbesserten Weichteilkontrast.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Ultraschallwellen können sich nur in Materie ausbreiten, im Gegensatz zu
+      elektromagnetischen Wellen.</span
+    >
+  </div>
+  <div class="title">
+    <span>Ultraschall</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Ultraschallwellen können sich nur in Materie ausbreiten, im Gegensatz zu
+      elektromagnetischen Wellen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Ein großer Vorteil der Sonografie ist die Unschädlichkeit für den
+      Organismus.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span></span>
+  </div>
+  <div class="title">
+    <span
+      ><span [innerHtml]="text59 | highlighter: searchText:'full'"></span>/<span
+        [innerHtml]="text60 | highlighter: searchText:'full'"
+      ></span>
+      und <span [innerHtml]="text | highlighter: searchText:'full'"></span>
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die
+      <span [innerHtml]="text59 | highlighter: searchText:'full'"></span> ist
+      eine der neuesten nuklearmedizinischen Untersuchungsmethoden.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Das
+      <span [innerHtml]="text59 | highlighter: searchText:'full'"></span>-Gerät
+      erkennt die radioaktiven Stoffe, die dem Patienten injiziert werden.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>
+      <span [innerHtml]="text60 | highlighter: searchText:'full'"></span> =
+      Positronen-Emissions-Tomographie.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>
+      <span [innerHtml]="text60 | highlighter: searchText:'full'"></span> und
+      <span [innerHtml]="text59 | highlighter: searchText:'full'"></span>f
+      werden hauptsächlich in der Onkologie eingesetzt.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text61 | highlighter: searchText:'full'"></span> ist
+      analog zu zur Ultraschallbildgebung nur das es Licht anstelle von Scahll
+      verwendet.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text61 | highlighter: searchText:'full'"></span> =
+      Optische Kohärenztomographie.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Haupteisatzgebiet der
+      <span [innerHtml]="text61 | highlighter: searchText:'full'"></span> isr
+      die Medizin, primär die Augenheilkunde.
+    </span>
+  </div>
+  <div class="title">
+    <span>Medizinische Register</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>
+        Ein medizinisches Register ist eine systematische Datensammlung für eine
+        bestimmte Erkrankung
+      </h3>
+      <ul>
+        <li>Ziel ist die Möglichkeit der statistischen Auswertung.</li>
+        <li>
+          Anlegen von Registern durch Krankenhäuser, Forschungseinrichtungen,
+          Pharmaunternehmen, Patientenorganisationen .
+        </li>
+        <li>
+          Dienen zur Beantwortung medizinisch-wissenschaftlicher bzw.
+          epidemiologischer Fragestellungen .
+        </li>
+        <li>
+          Art Informationsdrehscheibe zur Beurteilung von Krankheitsverläufen,
+          Bekämpfung von Krankheiten und zur Qualitätssicherung.
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>
+        Die Arten von Registern sind so vielfältig wie die Forschungsfragen, die
+        ihnen zugrunde liegen
+      </h3>
+      <ul>
+        <li>Register für Krebserkrankungen.</li>
+        <li>Hämophilie.</li>
+        <li>Infektionskrankheiten .</li>
+        <li>Rheumatoide Arthritis: Beobachtung der Biologika-Therapie.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="text-container">
+    <span
+      ><span [innerHtml]="text62 | highlighter: searchText:'full'"></span>/<span
+        [innerHtml]="text63 | highlighter: searchText:'full'"
+      ></span
+      >-Systeme</span
+    >
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche6/Tag28/RIS-PACS
+      Systeme
+    </span>
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf33()">Open PDF</button>
+    <button (click)="closePdf33()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show33"
+    [class.show]="show"
+    [src]="pdf21"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="title">
+    <span
+      ><span [innerHtml]="text62 | highlighter: searchText:'full'"></span
+    ></span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text62 | highlighter: searchText:'full'"></span> sind
+      in ihrem Funktionsumfang eng mit Krankenhausinformationssystemen (
+      <span [innerHtml]="text46 | highlighter: searchText:'full'"></span> )
+      verwandt.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Ein
+      <span [innerHtml]="text62 | highlighter: searchText:'full'"></span> ist
+      ein Radiologisches Informationssystem und dient hauptsächlich der
+      Dokumentation und Verwaltung medizinischer und administrativer Daten in
+      der Radiologie und der Prozesssteuerung.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>
+        Ein <span [innerHtml]="text62 | highlighter: searchText:'full'"></span>
+        umfasst noch weitere Funktionen
+      </h3>
+      <ul>
+        <li>Patientenmanagement.</li>
+        <li>Befundmanagement.</li>
+        <li>Befundmanagement.</li>
+        <li>Leistungsabrechnung.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="title">
+    <span>Der Scheduled Workflow in der Radiologie</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Ein Scheduled Workflow schafft einen nahtlosen Informationsfluss, der
+      einen effizienten Arbeitsablauf bei bildgebenden Verfahren unterstützt. Er
+      fasst Beauftragung, Terminierung, Bilderstellung, -speicherung, -anzeige
+      zusammen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Der Workflow von der Patientenaufnahme bis zur Bildverarbeitung</span>
+  </div>
+  <div class="img-container">
+    <img
+      src="assets/img/ris.png"
+      [class.big-img]="bigImg"
+      (click)="showBigImg()"
+    />
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Das
+      <span [innerHtml]="text62 | highlighter: searchText:'full'"></span>
+      steuert und verwaltet die Daten in der Radiologie.
+    </span>
+  </div>
+  <div class="title">
+    <span
+      ><span [innerHtml]="text63 | highlighter: searchText:'full'"></span
+    ></span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text63 | highlighter: searchText:'full'"></span> ist
+      die Abkürzung für Picture Archiving and Communication System.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Das
+      <span [innerHtml]="text63 | highlighter: searchText:'full'"></span> ist
+      zuständig für die Archivierung und dient als sogenannter Viewer.</span
+    >
+  </div>
+  <div class="title">
+    <span
+      >Gängige
+      <span [innerHtml]="text62 | highlighter: searchText:'full'"></span>- und
+      <span [innerHtml]="text63 | highlighter: searchText:'full'"></span>-
+      Anbieter</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Die Marktführer bei den
+      <span [innerHtml]="text62 | highlighter: searchText:'full'"></span> -
+      Anbietern ist Dedalus.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Führende Anbieter für
+      <span [innerHtml]="text63 | highlighter: searchText:'full'"></span> sind
+      Image Information Systems, PROTEC und Nexus AG.</span
+    >
+  </div>
+  <div class="text-container">
+    <span>Weitere klinische ITSysteme</span>
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche6/Tag29/Andere IT-Systeme.pdf
+    </span>
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf34()">Open PDF</button>
+    <button (click)="closePdf34()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show34"
+    [class.show]="show"
+    [src]="pdf22"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
 </div>

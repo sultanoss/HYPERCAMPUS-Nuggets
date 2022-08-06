@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./modul1.component.scss'],
 })
 export class Modul1Component implements OnInit {
-  showList:boolean = false;
+  showList: boolean = false;
   show: boolean = false;
   show2: boolean = false;
   show3: boolean = false;
@@ -37,6 +37,10 @@ export class Modul1Component implements OnInit {
   show28: boolean = false;
   show29: boolean = false;
   show30: boolean = false;
+  show31: boolean = false;
+  show32: boolean = false;
+  show33: boolean = false
+  show34: boolean = false;
 
   bigImg: boolean = false;
 
@@ -58,6 +62,10 @@ export class Modul1Component implements OnInit {
   pdf16 = 'assets/pdf/Einführung in KIS-Systeme.pdf';
   pdf17 = 'assets/pdf/Vertiefung von KIS - Systemen.pdf';
   pdf18 = 'assets/pdf/Digitale Gesundheits- und Pflegeanwendungen.pdf';
+  pdf19 ='assets/pdf/Telemedizinische Anwendungen am Beispiel Videosprechstunde.pdf';
+  pdf20 ='assets/pdf/Medizinische Bild- und Datenverarbeitung.pdf';
+  pdf21 ='assets/pdf/RIS-PACS-Systeme.pdf';
+  pdf22 ='assets/pdf/Andere IT-Systeme.pdf';
 
   title = 'highlight-text';
 
@@ -95,7 +103,7 @@ export class Modul1Component implements OnInit {
   text29 = `Gematik`;
   text30 = `Telematikinfrastruktur`;
   text31 = `VSDM`;
-  text32 = `ePA`;
+  text32 = `EPA`;
   text33 = `KIM`;
   text34 = `BMG`;
   text35 = `GMG`;
@@ -103,12 +111,12 @@ export class Modul1Component implements OnInit {
   text37 = `DEMIS`;
   text38 = `ISiK`;
   text39 = `BSI`;
-  text40 = `eGK`;
+  text40 = `EGK`;
   text41 = `PKI`;
-  text42 = `eHealth KT`;
+  text42 = `EHealth KT`;
   text43 = `SMC-B`;
-  text44 = `eHBA`;
-  text45 = `e-Rezept`;
+  text44 = `EHBA`;
+  text45 = `E-Rezept`;
   text46 = `KIS`;
   text47 = `PVS`;
   text48 = `Notfalldaten`;
@@ -117,15 +125,95 @@ export class Modul1Component implements OnInit {
   text51 = `DiGa`;
   text52 = `DiPas`;
   text53 = `PKV`;
+  text54 = `BMV`;
+  text55 = `Telemedizin`;
+  text56 = `Röntgen`;
+  text57 = `CT`;
+  text58 = `MRT`;
+  text59 = `SPECT`;
+  text60 = `PET`;
+  text61 = `OCT`;
+  text62 = `RIS`;
+  text63 = `PACS`;
+
+  searchCollection = [
+    this.text2,
+    this.text3,
+    this.text4,
+    this.text5,
+    this.text6,
+    this.text7,
+    this.text8,
+    this.text53,
+    this.text12,
+    this.text13,
+    this.text14,
+    this.text15,
+    this.text16,
+    this.text17,
+    this.text18,
+    this.text19,
+    this.text20,
+    this.text21,
+    this.text22,
+    this.text23,
+    this.text24,
+    this.text25,
+    this.text26,
+    this.text27,
+    this.text28,
+    this.text29,
+    this.text30,
+    this.text31,
+    this.text32,
+    this.text33,
+    this.text34,
+    this.text35,
+    this.text36,
+    this.text37,
+    this.text38,
+    this.text39,
+    this.text40,
+    this.text41,
+    this.text42,
+    this.text43,
+    this.text44,
+    this.text45,
+    this.text46,
+    this.text47,
+    this.text48,
+    this.text49,
+    this.text50,
+    this.text51,
+    this.text52,
+    this.text53,
+    this.text54,
+    this.text55,
+    this.text56,
+    this.text57,
+    this.text58,
+    this.text59,
+    this.text60,
+    this.text61,
+    this.text62,
+    this.text63,
+  ];
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.searchCollection.sort();
+  }
 
-  showSearchList(){
+  addSearchText(collection: any) {
+    this.searchText = collection;
     this.showList = true;
   }
-  hideSearchList(){
+
+  showSearchList() {
+    this.showList = true;
+  }
+  hideSearchList() {
     this.showList = false;
   }
 
@@ -312,5 +400,29 @@ export class Modul1Component implements OnInit {
   }
   closePdf30() {
     this.show30 = false;
+  }
+  openPdf31() {
+    this.show31 = true;
+  }
+  closePdf31() {
+    this.show31 = false;
+  }
+  openPdf32() {
+    this.show32 = true;
+  }
+  closePdf32() {
+    this.show32 = false;
+  }
+  openPdf33() {
+    this.show33 = true;
+  }
+  closePdf33() {
+    this.show33 = false;
+  }
+  openPdf34() {
+    this.show34 = true;
+  }
+  closePdf34() {
+    this.show34 = false;
   }
 }

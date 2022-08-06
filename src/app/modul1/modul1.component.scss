@@ -1,6 +1,10 @@
 :host {
   flex: 1;
 }
+::selection {
+  color: red;
+  background: yellow;
+}
 
 body {
   position: relative;
@@ -279,22 +283,22 @@ li {
   border-radius: 16px;
 }
 .search-options {
-  display: flex;
   align-self: center;
   margin-bottom: 20px;
   align-items: center;
-  width: 90%;
   flex-wrap: wrap;
   justify-content: center;
+  display: none;
   span {
     margin: 8px;
     font-weight: bold;
     background-color: #2f8aea;
     padding: 8px;
     border-radius: 16px;
-    width: 145px;
+    width: 165px;
     text-align: center;
     color: white;
+    cursor: pointer;
   }
 }
 
@@ -306,7 +310,7 @@ li {
   margin-bottom: 20px;
   align-items: center;
 
-  img{
+  img {
     height: 32px;
     cursor: pointer;
   }
@@ -323,4 +327,15 @@ li {
   font-weight: bold;
   cursor: pointer;
   color: white;
+}
+
+.show-list {
+  display: flex;
+}
+
+.show-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
 }
