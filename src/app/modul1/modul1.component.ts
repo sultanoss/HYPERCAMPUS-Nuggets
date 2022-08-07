@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-modul1',
@@ -39,7 +39,7 @@ export class Modul1Component implements OnInit {
   show30: boolean = false;
   show31: boolean = false;
   show32: boolean = false;
-  show33: boolean = false
+  show33: boolean = false;
   show34: boolean = false;
 
   bigImg: boolean = false;
@@ -62,10 +62,11 @@ export class Modul1Component implements OnInit {
   pdf16 = 'assets/pdf/Einführung in KIS-Systeme.pdf';
   pdf17 = 'assets/pdf/Vertiefung von KIS - Systemen.pdf';
   pdf18 = 'assets/pdf/Digitale Gesundheits- und Pflegeanwendungen.pdf';
-  pdf19 ='assets/pdf/Telemedizinische Anwendungen am Beispiel Videosprechstunde.pdf';
-  pdf20 ='assets/pdf/Medizinische Bild- und Datenverarbeitung.pdf';
-  pdf21 ='assets/pdf/RIS-PACS-Systeme.pdf';
-  pdf22 ='assets/pdf/Andere IT-Systeme.pdf';
+  pdf19 =
+    'assets/pdf/Telemedizinische Anwendungen am Beispiel Videosprechstunde.pdf';
+  pdf20 = 'assets/pdf/Medizinische Bild- und Datenverarbeitung.pdf';
+  pdf21 = 'assets/pdf/RIS-PACS-Systeme.pdf';
+  pdf22 = 'assets/pdf/Andere IT-Systeme.pdf';
 
   title = 'highlight-text';
 
@@ -135,6 +136,11 @@ export class Modul1Component implements OnInit {
   text61 = `OCT`;
   text62 = `RIS`;
   text63 = `PACS`;
+  text64 = `PDMS`;
+  text65 = `OMS`;
+  text66 = `ERP`;
+  text67 = `LIS`;
+  text68 = `AMIce`;
 
   searchCollection = [
     this.text2,
@@ -197,6 +203,11 @@ export class Modul1Component implements OnInit {
     this.text61,
     this.text62,
     this.text63,
+    this.text64,
+    this.text65,
+    this.text66,
+    this.text67,
+    this.text68,
   ];
 
   constructor() {}
@@ -209,6 +220,13 @@ export class Modul1Component implements OnInit {
     this.searchText = collection;
     this.showList = true;
   }
+  scroll(collection: any) {
+    let el = document.getElementById(collection);
+    el?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center',
+    });
+  }
 
   showSearchList() {
     this.showList = true;
@@ -217,8 +235,13 @@ export class Modul1Component implements OnInit {
     this.showList = false;
   }
 
-  showBigImg() {
-    this.bigImg = !this.bigImg;
+  showBigImg() {}
+  showBigImg1(element: any, id: any) {
+    element.id = id;
+    document.getElementById(id)?.classList.add('big-img');
+  }
+  closeImg1() {
+    document.getElementById('test1')?.classList.remove('big-img');
   }
 
   openPdf() {

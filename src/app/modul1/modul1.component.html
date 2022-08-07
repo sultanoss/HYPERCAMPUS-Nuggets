@@ -28,7 +28,9 @@
       class="search-options"
       *ngFor="let collection of searchCollection"
     >
-      <span (click)="addSearchText(collection)">{{ collection }}</span>
+      <span (click)="addSearchText(collection);scroll(collection)">
+        {{ collection }}
+      </span>
     </div>
   </div>
   <div
@@ -79,7 +81,7 @@
     <li>Impfempfehlung.</li>
   </ul>
 </div>
-<div class="discriptions">
+<div id="DIVI" class="discriptions">
   <span [innerHtml]="text6 | highlighter: searchText:'full'"></span>
   <span
     >Das DIVI Intensivregister ist ein Projekt im Rahmen der COVID-19 Pandemie
@@ -102,7 +104,7 @@
     </li>
   </ul>
 </div>
-<div class="discriptions">
+<div id="BfArM" class="discriptions">
   <span [innerHtml]="text9 | highlighter: searchText:'full'"></span>
   <ul>
     <li>Beratung von Arzneimittelherstellern zu COVID-19.</li>
@@ -122,7 +124,7 @@
   </ul>
 </div>
 
-<div class="discriptions">
+<div id="DIMDI" class="discriptions">
   <span [innerHtml]="text5 | highlighter: searchText:'full'"></span>
   <ul>
     <li>Seit 26.05.2020 DIMDI gehört zu BfArM.</li>
@@ -138,7 +140,7 @@
     </li>
   </ul>
 </div>
-<div class="discriptions">
+<div id="IQWiG" class="discriptions">
   <span [innerHtml]="text7 | highlighter: searchText:'full'"></span>
   <ul>
     <li>Information über Vor- und Nachteile medizinischer Leistungen.</li>
@@ -153,7 +155,7 @@
     </li>
   </ul>
 </div>
-<div class="discriptions">
+<div id="BZgA" class="discriptions">
   <span [innerHtml]="text4 | highlighter: searchText:'full'"></span>
   <ul>
     <li>
@@ -219,7 +221,7 @@
     </p>
     <span class="warn">Rechtsform:Öffentlich-rechtlich.</span>
   </div>
-  <div class="discriptions">
+  <div id="GKV" class="discriptions">
     <span [innerHtml]="text11 | highlighter: searchText:'full'"></span>
     <p>
       Aufgabe:Laut Sozialgesetzbuch “Gesundheit der Versicherten zu erhalten,
@@ -252,7 +254,7 @@
       die gesetzliche Grundlage der vertragsärztlichen Versorgung.</span
     >
   </div>
-  <div class="more-infos">
+  <div id="Gesundheitsfond" class="more-infos">
     <img src="assets/img/info-32.png" />
     <span
       >Der
@@ -292,7 +294,7 @@
       und mitzugestalten .
     </span>
   </div>
-  <div class="text-container">
+  <div id="GBA" class="text-container">
     <span
       >Der gemeinsame Bundesausschuss
       <span [innerHtml]="text15 | highlighter: searchText:'full'"></span>
@@ -376,7 +378,7 @@
     [show-borders]="false"
     style="width: 100%; height: 600px"
   ></pdf-viewer>
-  <div class="more-infos">
+  <div id="KBV" class="more-infos">
     <img src="assets/img/info-32.png" />
     <span
       >Kassenärztliche Bundesvereinigung (<span
@@ -385,14 +387,14 @@
       >).
     </span>
   </div>
-  <div class="more-infos">
+  <div id="DKG" class="more-infos">
     <img src="assets/img/info-32.png" />
     <span
       >Deutsche Krankenhausgesellschaft (
       <span [innerHtml]="text17 | highlighter: searchText:'full'"></span>).
     </span>
   </div>
-  <div class="more-infos">
+  <div id="KZBV" class="more-infos">
     <img src="assets/img/info-32.png" />
     <span
       >Kassenzahnärztliche Bundesvereinigung (<span
@@ -488,7 +490,7 @@
       Vereinigung.</span
     >
   </div>
-  <div class="text-container">
+  <div id="BÄK" class="text-container">
     <span>Berufsständige Organisationen.</span>
   </div>
   <div class="title">
@@ -556,7 +558,7 @@
       </ul>
     </div>
   </div>
-  <div class="title">
+  <div id="BPtK" class="title">
     <span
       >Die Bundespsychotherapeutenkammer (<span
         [innerHtml]="text22 | highlighter: searchText:'full'"
@@ -589,7 +591,7 @@
     <img src="assets/img/info-32.png" />
     <span>Insgesamt gibt es 12 Landestherapeutenkammern.</span>
   </div>
-  <div class="title">
+  <div id="EBM" class="title">
     <span
       >Vergütung der Ärzte
       <span [innerHtml]="text20 | highlighter: searchText:'full'"></span> und
@@ -635,7 +637,7 @@
       .</span
     >
   </div>
-  <div class="more-infos">
+  <div id="GOÄ" class="more-infos">
     <img src="assets/img/info-32.png" />
     <span
       >Nach der Gebührenordnung für Ärzte
@@ -817,7 +819,7 @@
     <img src="assets/img/info-32.png" />
     <span>Krankenhausschließung.</span>
   </div>
-  <div class="title">
+  <div id="KHZG" class="title">
     <span
       >Das Krankenhauszukunftsgesetz (
       <span [innerHtml]="text24 | highlighter: searchText:'full'"></span> )
@@ -833,7 +835,7 @@
     <img src="assets/img/info-32.png" />
     <span>Bettenplanung.</span>
   </div>
-  <div class="more-infos">
+  <div id="IMD" class="more-infos">
     <img src="assets/img/info-32.png" />
     <span
       >Integrierte Materialdokumentation (
@@ -998,17 +1000,19 @@
   </div>
   <div class="title">
     <span
-      >Die Zusammenarbeit zwischen Haus- bzw. Fachärzten undLaboren ist enorm
+      >Die Zusammenarbeit zwischen Haus- bzw. Fachärzten und Laboren ist enorm
       wichtig</span
     >
   </div>
-  <div class="img-container">
-    <img
-      src="assets/img/labor.png"
-      [class.big-img]="bigImg"
-      (click)="showBigImg()"
-    />
+  <!-- template variable -->
+  <div #test class="img-container" (click)="showBigImg1(test, 'test1')">
+    <img src="assets/img/labor.png" />
   </div>
+  <img
+    class="close-btn"
+    src="assets/img/close-window-32.png"
+    (click)="closeImg1()"
+  />
   <div class="text-container">
     <span>Berufsgruppen im therapeutischen Bereich.</span>
   </div>
@@ -1527,12 +1531,12 @@
     [show-borders]="false"
     style="width: 100%; height: 600px"
   ></pdf-viewer>
-  <div class="more-infos">
+  <div id="Fat Client" class="more-infos">
     <img src="assets/img/info-32.png" />
     <span
       >Ein
       <span [innerHtml]="text26 | highlighter: searchText:'full'"></span> ist
-      ein voll ausgestatteter Rechner mitvollwertigem Betriebssystem und lokaler
+      ein voll ausgestatteter Rechner mit vollwertigem Betriebssystem und lokaler
       Software.</span
     >
   </div>
@@ -1643,7 +1647,7 @@
     [show-borders]="false"
     style="width: 100%; height: 600px"
   ></pdf-viewer>
-  <div class="more-infos">
+  <div id="Gematik" class="more-infos">
     <img src="assets/img/info-32.png" />
     <span
       >Die
@@ -1733,12 +1737,8 @@
       <span [innerHtml]="text29 | highlighter: searchText:'full'"></span>?</span
     >
   </div>
-  <div class="img-container">
-    <img
-      src="assets/img/csm_gematik_Website_Diagramme_01_cj_118cd299ca.png"
-      [class.big-img]="bigImg"
-      (click)="showBigImg()"
-    />
+  <div #test2 class="img-container" (click)="showBigImg1(test2, 'test2')">
+    <img src="assets/img/csm_gematik_Website_Diagramme_01_cj_118cd299ca.png" />
   </div>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
@@ -1783,7 +1783,7 @@
       im Gesundheitswesen.</span
     >
   </div>
-  <div class="title">
+  <div id="BMG" class="title">
     <span
       >Die Gesellschafter setzen sich aus dem
       <span
@@ -1837,7 +1837,7 @@
       </li>
     </ul>
   </div>
-  <div class="info-block">
+  <div id="GMG" class="info-block">
     <h3>
       Das
       <span [innerHtml]="text19 | highlighter: searchText:'full'"></span>
@@ -1916,7 +1916,7 @@
       <span [innerHtml]="text30 | highlighter: searchText:'full'"></span>.</span
     >
   </div>
-  <div class="info-block">
+  <div id="EPA" class="info-block">
     <h3>Die elektronische Patientenakte</h3>
     <h4>Seit Januar2021:</h4>
     <ul>
@@ -2006,7 +2006,7 @@
     <img src="assets/img/info-32.png" />
     <span>TI-Messenger Schnelle Nachrichten in Echtzeit.</span>
   </div>
-  <div class="more-infos">
+  <div id="ISiK" class="more-infos">
     <img src="assets/img/info-32.png" />
     <span
       ><span [innerHtml]="text38 | highlighter: searchText:'full'"></span> Für
@@ -2201,7 +2201,7 @@
       </ul>
     </div>
   </div>
-  <div class="more-infos">
+  <div id="BSI" class="more-infos">
     <img src="assets/img/info-32.png" />
     <div class="info-block">
       <h3>
@@ -2496,7 +2496,7 @@
     <img src="assets/img/info-32.png" />
     <span>Konnektor.</span>
   </div>
-  <div class="more-infos">
+  <div id="EHealth KT" class="more-infos">
     <img src="assets/img/info-32.png" />
     <span
       >Kartenterminal (
@@ -2637,9 +2637,9 @@
     [show-borders]="false"
     style="width: 100%; height: 600px"
   ></pdf-viewer>
-  <div class="more-infos">
+  <div id="EGK" class="more-infos">
     <img src="assets/img/info-32.png" />
-    <span
+    <span id="EHBA"
       >Die
       <span [innerHtml]="text40 | highlighter: searchText:'full'"></span> und
       <span [innerHtml]="text44 | highlighter: searchText:'full'"></span> sind
@@ -3126,7 +3126,7 @@
       TK-Safe.</span
     >
   </div>
-  <div class="text-container">
+  <div id="E-Rezept" class="text-container">
     <span
       >Alles rund um das
       <span [innerHtml]="text45 | highlighter: searchText:'full'"></span>
@@ -3280,7 +3280,7 @@
       >-Spitzenverband zum Entwurf eines solchen QR-Code Ausdrucks.
     </span>
   </div>
-  <div class="text-container">
+  <div id="KIM" class="text-container">
     <span
       >Alles rund um das
       <span [innerHtml]="text33 | highlighter: searchText:'full'"></span>
@@ -3427,7 +3427,7 @@
       <span [innerHtml]="text33 | highlighter: searchText:'full'"></span>.</span
     >
   </div>
-  <div class="text-container">
+  <div id="E-medikationsplan" class="text-container">
     <span
       >Alles rund um das
       <span [innerHtml]="text36 | highlighter: searchText:'full'"></span>
@@ -3678,7 +3678,7 @@
       >Seit März 2020 laufen Feldtests für die Erprobung des Notfalldatensatzes.
     </span>
   </div>
-  <div class="text-container">
+  <div id="DEMIS" class="text-container">
     <span
       >Alles rund um das
       <span [innerHtml]="text37 | highlighter: searchText:'full'"></span>
@@ -4109,7 +4109,7 @@
       <span [innerHtml]="text19 | highlighter: searchText:'full'"></span>)</span
     >
   </div>
-  <div class="title">
+  <div id="DMS" class="title">
     <span
       >Dokumente werden durch das Dokumenten-ManagementSystem (
       <span [innerHtml]="text49 | highlighter: searchText:'full'"></span> )
@@ -4279,7 +4279,7 @@
   </div>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
-    <div class="info-block">
+    <div id="IWiG" class="info-block">
       <h3>
         <span [innerHtml]="text50 | highlighter: searchText:'full'"></span
         >:führender Forschungseinrichtung für klinisches Prossesmanegemant und
@@ -4386,7 +4386,7 @@
       </ul>
     </div>
   </div>
-  <div class="text-container">
+  <div id="KIS" class="text-container">
     <span>
       <span [innerHtml]="text46 | highlighter: searchText:'full'"></span>
       System Erklärung und Hintergrund</span
@@ -4722,7 +4722,7 @@
     [show-borders]="false"
     style="width: 100%; height: 600px"
   ></pdf-viewer>
-  <div class="title">
+  <div id="DiGa" class="title">
     <span
       >Was sind
       <span [innerHtml]="text51 | highlighter: searchText:'full'"></span>?</span
@@ -4847,7 +4847,7 @@
       im DiGa Verzeichnis aufgelistet.</span
     >
   </div>
-  <div class="title">
+  <div id="DiPas" class="title">
     <span
       ><span [innerHtml]="text52 | highlighter: searchText:'full'"></span
     ></span>
@@ -4992,7 +4992,7 @@
       Anforderungen erfühlt sein.
     </span>
   </div>
-  <div class="more-infos">
+  <div id="BMV" class="more-infos">
     <img src="assets/img/info-32.png" />
     <span
       >die technische Anforderungen sind in §4 Anlage 31b Bundesmatelvertrag für
@@ -5263,7 +5263,7 @@
       digitaler Form bereitzustellen.
     </span>
   </div>
-  <div class="title">
+  <div id="CT" class="title">
     <span>
       <span [innerHtml]="text57 | highlighter: searchText:'full'"></span
     ></span>
@@ -5608,7 +5608,8 @@
   <div class="ps">
     <img src="assets/img/warning-4-32.png" />
     <span
-      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche6/Tag29/Andere IT-Systeme.pdf
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche6/Tag29/Andere
+      IT-Systeme.pdf
     </span>
   </div>
   <div class="pdf-button">
@@ -5634,4 +5635,186 @@
     [show-borders]="false"
     style="width: 100%; height: 600px"
   ></pdf-viewer>
+  <div class="title">
+    <span>Pflegeinformationssystem</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Pflegeinformationssysteme sind die führenden administrativen klinischen
+      Systeme in einem Altenheim.
+    </span>
+  </div>
+  <div class="img-container">
+    <img
+      src="assets/img/plegesystem.png"
+      [class.big-img]="bigImg"
+      (click)="showBigImg()"
+    />
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >MediFox als innovativer Marktteilnehmer für Managementinformationssysteme
+      für Pflegedienste.</span
+    >
+  </div>
+  <div class="title">
+    <span>OP - Managementsystem</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Patientendaten-Managementsysteme (
+      <span [innerHtml]="text64 | highlighter: searchText:'full'"></span> ) sind
+      entweder alleinstehend oder bereits ins
+      <span [innerHtml]="text46 | highlighter: searchText:'full'"></span> -
+      System integriert.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >OP- Managementsysteme (
+      <span [innerHtml]="text65 | highlighter: searchText:'full'"></span> )
+      verknüpfen
+      <span [innerHtml]="text46 | highlighter: searchText:'full'"></span>,
+      <span [innerHtml]="text63 | highlighter: searchText:'full'"></span> und
+      <span [innerHtml]="text66 | highlighter: searchText:'full'"></span> -
+      Systeme.</span
+    >
+  </div>
+  <div id="ERP" class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>
+        <span [innerHtml]="text66 | highlighter: searchText:'full'"></span> -
+        System = Enterprise Resource Planning - System:
+      </h3>
+      <ul>
+        <li>
+          Planung und Steuerung von Aufgaben, Ressourcen, Kapital, Personal und
+          Informationstechnik.
+        </li>
+        <li>Verknüpfung von Organisation und Struktur der OP - Abteilung.</li>
+        <li>
+          Übernahme, Verarbeitung und Verwaltung aller für das OP-Management
+          relevanter Daten.
+        </li>
+        <li>Erstellung von statistischen Analysen.</li>
+        <li>Auswertung von historischen Daten.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="title">
+    <span>Laborinformationssystem</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Modulare Laborinformationssysteme (
+      <span [innerHtml]="text67 | highlighter: searchText:'full'"></span> )
+      gewannen z.B. während der Covid 19 - Pandemie enorm an Bedeutung.
+    </span>
+  </div>
+  <div id="test1" class="img-container">
+    <img
+      src="assets/img/lis.png"
+      [class.big-img]="bigImg"
+      (click)="showBigImg()"
+    />
+  </div>
+  <div id="AMIce" #AMIce class="title">
+    <span>Arzneimittelinformationssystem</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >OP- Managementsysteme (
+      <span [innerHtml]="text65 | highlighter: searchText:'full'"></span> )
+      verknüpfen
+      <span [innerHtml]="text46 | highlighter: searchText:'full'"></span>,
+      <span [innerHtml]="text63 | highlighter: searchText:'full'"></span> und
+      <span [innerHtml]="text66 | highlighter: searchText:'full'"></span> -
+      Systeme.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>
+        Das Arzneimittelinformationssystem
+        <span [innerHtml]="text68 | highlighter: searchText:'full'"></span>
+      </h3>
+      <ul>
+        <li>
+          Das Arzneimittelinformationssystem liefert Informationen zu aktuell
+          zugelassenen und einst zugelassenen Medikamenten für Fachkräfte und
+          Bürger.
+        </li>
+        <li>Beinhaltet Datenbanken verschiedener Körperschaften.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>
+        <span [innerHtml]="text68 | highlighter: searchText:'full'"></span> für
+        den öffentlich zugänglichen Bereich:
+      </h3>
+      <ul>
+        <li>Für kostenlose Recherchezwecke.</li>
+        <li>
+          Beinhaltet Informationen zu zugelassenen Arzneimittel, Stoffe und
+          Chargen.
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="title">
+    <span>IT-Fachkräfte müssen fit für die Zukunft sein</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>
+        Das Arzneimittelinformationssystem
+        <span [innerHtml]="text68 | highlighter: searchText:'full'"></span>
+      </h3>
+      <ul>
+        <li>
+          Das Arzneimittelinformationssystem liefert Informationen zu aktuell
+          zugelassenen und einst zugelassenen Medikamenten für Fachkräfte und
+          Bürger.
+        </li>
+        <li>Beinhaltet Datenbanken verschiedener Körperschaften.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>Aufgabe der IT-Fachkräfte:</h3>
+      <ul>
+        <li>Laufende Weiterbildung .</li>
+        <li>Patientenakte auf allen Systemen .</li>
+        <li>
+          Sicherstellen, dass die IT-Architektur noch administrierbar ist.
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>"Wildwuchs" sollte verhindert werden</h3>
+      <ul>
+        <li>
+          z.B. wenn jeder Arzt einfach selbst einkauft ohne Rücksicht auf
+          Support-Strukturen, etc.
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>

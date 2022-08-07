@@ -229,13 +229,28 @@ li {
   margin-top: 34px;
 
   img {
-    width: 450px;
+    width: 650px;
     cursor: pointer;
   }
+  .close-btn {
+    height: 32px;
+    width: 32px;
+  }
+}
+
+.close-btn {
+  height: 32px;
+  width: 32px;
+  margin: 20px;
 }
 
 .big-img {
   transform: scale(1.5);
+  border: 2px solid black;
+}
+
+.small-img {
+  transform: scale(1);
 }
 
 .pdf-button {
