@@ -75,7 +75,7 @@ export class Modul1Component implements OnInit {
   text = `In Deutschland gibt es zahlreiche unterschiedliche Akteure im
   Gesundheitswesen.`;
   text2 = `Robert Koch Institut`;
-  text3 = `Paul Ehrlich Institut `;
+  text3 = `Paul Ehrlich Institut`;
   text4 = `BZgA`;
   text5 = `DIMDI`;
   text6 = `DIVI`;
