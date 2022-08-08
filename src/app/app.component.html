@@ -1,22 +1,38 @@
 <div class="welcom-container">
+  <div class="menu-bar">
+    <a routerLink="/home">
+      <i class="fa fa-user-o" aria-hidden="true"></i>
+      Home
+    </a>
+    <a routerLink="/modul1">
+      <i class="fa fa-laptop" aria-hidden="true"></i>
+      Modul 1
+    </a>
+    <a routerLink="/shortcuts">
+      <i class="fa fa-clone" aria-hidden="true"></i>
+      Abkürzungen
+    </a>
+  </div>
 
-<div class="menu-bar">
-  <a routerLink="/home">
-    <i class="fa fa-user-o" aria-hidden="true"></i>
-    Home
-  </a>
-  <a routerLink="/modul1">
-    <i class="fa fa-laptop" aria-hidden="true"></i>
-    Modul 1
-  </a>
-  <a routerLink="/shortcuts">
-    <i class="fa fa-clone" aria-hidden="true"></i>
-    Abkürzungen
-  </a>
-</div>
-
-<router-outlet></router-outlet>
-
+  <div class="mobile-menu">
+    <img (click)="openMobileMenu()" src="assets/img/menu-4-48.png" />
+  </div>
+  <div *ngIf="mobileMenu" class="mobile-menu-content">
+    <a routerLink="/home">
+      <i class="fa fa-user-o" aria-hidden="true"></i>
+      Home
+    </a>
+    <a routerLink="/modul1">
+      <i class="fa fa-laptop" aria-hidden="true"></i>
+      Modul 1
+    </a>
+    <a routerLink="/shortcuts">
+      <i class="fa fa-clone" aria-hidden="true"></i>
+      Abkürzungen
+    </a>
+    <img (click)="closeMobileMenu()" src="assets/img/close-window-32.png">
+  </div>
+  <router-outlet></router-outlet>
 </div>
 
 <app-footer></app-footer>
