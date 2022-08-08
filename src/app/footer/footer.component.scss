@@ -3,6 +3,23 @@
   width: 100%;
   background-color:  hsl(0deg 0% 24%);
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  margin-top: 32px;
+  align-items: center;
+
+}
+
+.links{
+  color: white;
+  a{
+    text-decoration: none;
+    color: white;
+    font-family: raleway;
+    font-weight: bold;
+    margin: 10px;
+    &:hover{
+      color: #ff370a;
+    }
+  }
 }

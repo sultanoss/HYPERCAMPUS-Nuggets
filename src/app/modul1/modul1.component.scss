@@ -25,6 +25,9 @@ li {
   color: #3d3d3d;
   font-weight: 600;
   margin-top: 50px;
+  h2 {
+    text-align: center;
+  }
 }
 
 .header {
@@ -53,6 +56,12 @@ li {
   align-self: center;
   margin-top: 24px;
   margin-bottom: 24px;
+  @media (max-width: 650px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
   label {
     font-weight: 600;
@@ -63,6 +72,9 @@ li {
     border-radius: 16px;
     height: 30px;
     padding: 8px;
+    @media (max-width: 500px) {
+      width: 250px;
+    }
   }
 }
 
@@ -80,6 +92,12 @@ li {
   font-size: 18px;
   align-self: center;
   margin-bottom: 16px;
+  @media (max-width: 500px) {
+    width: 80%;
+  }
+  @media (max-width: 450px) {
+    font-size: 14px;
+  }
 }
 
 .text-container2 {
@@ -142,6 +160,9 @@ li {
   border-radius: 16px;
   margin-bottom: 16px;
   font-family: raleway;
+  @media (max-width: 450px) {
+    font-size: 12px;
+  }
 
   span {
     padding: 16px;
@@ -178,9 +199,17 @@ li {
   padding-right: 16px;
   word-break: break-word;
   max-width: 690px;
+  @media (max-width: 450px) {
+    flex-direction: column;
+    font-size: 12px;
+  }
 
   img {
     margin-right: 10px;
+    @media (max-width: 450px) {
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
   }
 }
 
@@ -189,11 +218,19 @@ li {
   align-items: center;
   font-weight: bold;
   margin-bottom: 16px;
-  width: 50%;
+  width: 80%;
   font-family: raleway;
+  @media (max-width: 450px) {
+    flex-direction: column;
+    font-size: 12px;
+  }
 
   img {
     margin-right: 10px;
+    @media (max-width: 450px) {
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
   }
 }
 
@@ -204,9 +241,12 @@ li {
   font-weight: bold;
   margin-bottom: 16px;
   margin-top: 8px;
-  width: 650px;
+  width: 80%;
   text-align: center;
   font-family: raleway;
+  @media (max-width: 450px) {
+    font-size: 12px;
+  }
 }
 
 .info-block {
@@ -216,9 +256,14 @@ li {
   align-items: center;
   padding: 16px;
   border-radius: 16px;
-  width: 610px;
+  width: 80%;
   margin-bottom: 16px;
   font-family: raleway;
+  ul {
+    @media (max-width: 450px) {
+      font-size: 12px;
+    }
+  }
 }
 
 .img-container {
@@ -229,8 +274,7 @@ li {
   margin-top: 34px;
 
   img {
-    width: 650px;
-    cursor: pointer;
+    width: 90%;
   }
   .close-btn {
     height: 32px;

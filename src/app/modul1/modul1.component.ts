@@ -235,15 +235,6 @@ export class Modul1Component implements OnInit {
     this.showList = false;
   }
 
-  showBigImg() {}
-  showBigImg1(element: any, id: any) {
-    element.id = id;
-    document.getElementById(id)?.classList.add('big-img');
-  }
-  closeImg1() {
-    document.getElementById('test1')?.classList.remove('big-img');
-  }
-
   openPdf() {
     this.show = true;
   }

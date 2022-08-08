@@ -13,6 +13,8 @@ import { HighlighterPipe } from './highlighter.pipe';
 import { AbkuerzungenComponent } from './abkuerzungen/abkuerzungen.component';
 import { ViewportScroller } from '@angular/common';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { ImprintComponent } from './imprint/imprint.component';
+import { LeagalnoticeComponent } from './leagalnotice/leagalnotice.component';
 
 
 
@@ -23,7 +25,9 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     HomeComponent,
     Modul1Component,
     HighlighterPipe,
-    AbkuerzungenComponent
+    AbkuerzungenComponent,
+    ImprintComponent,
+    LeagalnoticeComponent
   ],
   imports: [
     BrowserModule,

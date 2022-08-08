@@ -11,7 +11,7 @@
     <input
       [(ngModel)]="searchText"
       type="search"
-      placeholder="Bitte geben Sie Suchbegriffe ein aus der Suchbegriffe-Liste"
+      placeholder="Bitte geben Sie Suchbegriffe ein"
     />
   </div>
   <div class="btns">
@@ -28,7 +28,7 @@
       class="search-options"
       *ngFor="let collection of searchCollection"
     >
-      <span (click)="addSearchText(collection);scroll(collection)">
+      <span (click)="addSearchText(collection); scroll(collection)">
         {{ collection }}
       </span>
     </div>
@@ -108,7 +108,7 @@
 <div id="BfArM" class="discriptions">
   <span [innerHtml]="text9 | highlighter: searchText:'full'"></span>
   <ul>
-    <li >Beratung von Arzneimittelherstellern zu COVID-19.</li>
+    <li>Beratung von Arzneimittelherstellern zu COVID-19.</li>
     <li>
       Bearbeitung (BfArM) und Genehmigung (PEI) klinischer Prüfungen von
       Impfstoffen.
@@ -1006,14 +1006,10 @@
     >
   </div>
   <!-- template variable -->
-  <div #test class="img-container" (click)="showBigImg1(test, 'test1')">
+  <div #test class="img-container">
     <img src="assets/img/labor.png" />
   </div>
-  <img
-    class="close-btn"
-    src="assets/img/close-window-32.png"
-    (click)="closeImg1()"
-  />
+
   <div class="text-container">
     <span>Berufsgruppen im therapeutischen Bereich.</span>
   </div>
@@ -1537,8 +1533,8 @@
     <span
       >Ein
       <span [innerHtml]="text26 | highlighter: searchText:'full'"></span> ist
-      ein voll ausgestatteter Rechner mit vollwertigem Betriebssystem und lokaler
-      Software.</span
+      ein voll ausgestatteter Rechner mit vollwertigem Betriebssystem und
+      lokaler Software.</span
     >
   </div>
   <div id="Thin Client" class="more-infos">
@@ -1738,7 +1734,7 @@
       <span [innerHtml]="text29 | highlighter: searchText:'full'"></span>?</span
     >
   </div>
-  <div #test2 class="img-container" (click)="showBigImg1(test2, 'test2')">
+  <div #test2 class="img-container">
     <img src="assets/img/csm_gematik_Website_Diagramme_01_cj_118cd299ca.png" />
   </div>
   <div class="more-infos">
@@ -1795,11 +1791,7 @@
     >
   </div>
   <div class="img-container">
-    <img
-      src="assets/img/738x415_enlarge.jpg"
-      [class.big-img]="bigImg"
-      (click)="showBigImg()"
-    />
+    <img src="assets/img/738x415_enlarge.jpg" [class.big-img]="bigImg" />
   </div>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
@@ -1860,11 +1852,7 @@
     <span>Umgesetzte Projekte</span>
   </div>
   <div class="img-container">
-    <img
-      src="assets/img/projekte.png"
-      [class.big-img]="bigImg"
-      (click)="showBigImg()"
-    />
+    <img src="assets/img/projekte.png" [class.big-img]="bigImg" />
   </div>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
@@ -2152,11 +2140,7 @@
     <span>Die 4 Ebenen der Interoperabilität für Schnittstellen</span>
   </div>
   <div class="img-container">
-    <img
-      src="assets/img/interoperabilität.png"
-      [class.big-img]="bigImg"
-      (click)="showBigImg()"
-    />
+    <img src="assets/img/interoperabilität.png" [class.big-img]="bigImg" />
   </div>
   <div class="text-container">
     <span
@@ -2172,11 +2156,7 @@
     >
   </div>
   <div class="img-container">
-    <img
-      src="assets/img/tabelleTi.png"
-      [class.big-img]="bigImg"
-      (click)="showBigImg()"
-    />
+    <img src="assets/img/tabelleTi.png" [class.big-img]="bigImg" />
   </div>
   <div class="text-container">
     <span
@@ -2315,11 +2295,7 @@
     >
   </div>
   <div class="img-container">
-    <img
-      src="assets/img/tiPlan.png"
-      [class.big-img]="bigImg"
-      (click)="showBigImg()"
-    />
+    <img src="assets/img/tiPlan.png" [class.big-img]="bigImg" />
   </div>
   <div class="text-container">
     <span
@@ -2368,11 +2344,7 @@
     >
   </div>
   <div class="img-container">
-    <img
-      src="assets/img/bausteineTi.png"
-      [class.big-img]="bigImg"
-      (click)="showBigImg()"
-    />
+    <img src="assets/img/bausteineTi.png" [class.big-img]="bigImg" />
   </div>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
@@ -2965,11 +2937,7 @@
     >
   </div>
   <div class="img-container">
-    <img
-      src="assets/img/epastufen.png"
-      [class.big-img]="bigImg"
-      (click)="showBigImg()"
-    />
+    <img src="assets/img/epastufen.png" [class.big-img]="bigImg" />
   </div>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
@@ -3970,11 +3938,7 @@
     <span>Ein Praxisverwaltungssystem ist ein Verwaltungs- "Allrounder"</span>
   </div>
   <div class="img-container">
-    <img
-      src="assets/img/pvssystem.png"
-      [class.big-img]="bigImg"
-      (click)="showBigImg()"
-    />
+    <img src="assets/img/pvssystem.png" [class.big-img]="bigImg" />
   </div>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
@@ -3990,11 +3954,7 @@
     >
   </div>
   <div class="img-container">
-    <img
-      src="assets/img/lastenheft1.png"
-      [class.big-img]="bigImg"
-      (click)="showBigImg()"
-    />
+    <img src="assets/img/lastenheft1.png" [class.big-img]="bigImg" />
   </div>
   <div class="title">
     <span
@@ -4118,11 +4078,7 @@
     </span>
   </div>
   <div class="img-container">
-    <img
-      src="assets/img/dms.png"
-      [class.big-img]="bigImg"
-      (click)="showBigImg()"
-    />
+    <img src="assets/img/dms.png" [class.big-img]="bigImg" />
   </div>
   <div class="title">
     <span
@@ -4461,11 +4417,7 @@
     >
   </div>
   <div class="img-container">
-    <img
-      src="assets/img/dedalus.png"
-      [class.big-img]="bigImg"
-      (click)="showBigImg()"
-    />
+    <img src="assets/img/dedalus.png" [class.big-img]="bigImg" />
   </div>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
@@ -4483,11 +4435,7 @@
     >
   </div>
   <div class="img-container">
-    <img
-      src="assets/img/kis2.png"
-      [class.big-img]="bigImg"
-      (click)="showBigImg()"
-    />
+    <img src="assets/img/kis2.png" [class.big-img]="bigImg" />
   </div>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
@@ -4504,11 +4452,7 @@
     >
   </div>
   <div class="img-container">
-    <img
-      src="assets/img/kis3.png"
-      [class.big-img]="bigImg"
-      (click)="showBigImg()"
-    />
+    <img src="assets/img/kis3.png" [class.big-img]="bigImg" />
   </div>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
@@ -4603,11 +4547,7 @@
     >
   </div>
   <div class="img-container">
-    <img
-      src="assets/img/kis4.png"
-      [class.big-img]="bigImg"
-      (click)="showBigImg()"
-    />
+    <img src="assets/img/kis4.png" [class.big-img]="bigImg" />
   </div>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
@@ -4768,11 +4708,7 @@
     <span>Wann ist eine App ein Medizinprodukt?</span>
   </div>
   <div class="img-container">
-    <img
-      src="assets/img/digaORnot.png"
-      [class.big-img]="bigImg"
-      (click)="showBigImg()"
-    />
+    <img src="assets/img/digaORnot.png" [class.big-img]="bigImg" />
   </div>
   <div class="title">
     <span>Zulassung der DiGas</span>
@@ -5359,8 +5295,11 @@
     <img src="assets/img/info-32.png" />
     <span
       >Die
-      <span id="SPECT" [innerHtml]="text59 | highlighter: searchText:'full'"></span> ist
-      eine der neuesten nuklearmedizinischen Untersuchungsmethoden.
+      <span
+        id="SPECT"
+        [innerHtml]="text59 | highlighter: searchText:'full'"
+      ></span>
+      ist eine der neuesten nuklearmedizinischen Untersuchungsmethoden.
     </span>
   </div>
   <div class="more-infos">
@@ -5451,7 +5390,7 @@
       </ul>
     </div>
   </div>
-  <div  class="text-container">
+  <div class="text-container">
     <span
       ><span [innerHtml]="text62 | highlighter: searchText:'full'"></span>/<span
         [innerHtml]="text63 | highlighter: searchText:'full'"
@@ -5545,11 +5484,7 @@
     <span>Der Workflow von der Patientenaufnahme bis zur Bildverarbeitung</span>
   </div>
   <div class="img-container">
-    <img
-      src="assets/img/ris.png"
-      [class.big-img]="bigImg"
-      (click)="showBigImg()"
-    />
+    <img src="assets/img/ris.png" [class.big-img]="bigImg" />
   </div>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
@@ -5647,11 +5582,7 @@
     </span>
   </div>
   <div class="img-container">
-    <img
-      src="assets/img/plegesystem.png"
-      [class.big-img]="bigImg"
-      (click)="showBigImg()"
-    />
+    <img src="assets/img/plegesystem.png" [class.big-img]="bigImg" />
   </div>
   <div class="more-infos">
     <img src="assets/img/info-32.png" />
@@ -5719,11 +5650,7 @@
     </span>
   </div>
   <div id="test1" class="img-container">
-    <img
-      src="assets/img/lis.png"
-      [class.big-img]="bigImg"
-      (click)="showBigImg()"
-    />
+    <img src="assets/img/lis.png" [class.big-img]="bigImg" />
   </div>
   <div id="AMIce" #AMIce class="title">
     <span>Arzneimittelinformationssystem</span>

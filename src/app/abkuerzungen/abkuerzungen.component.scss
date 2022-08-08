@@ -11,7 +11,7 @@ span {
   flex-direction: column;
   align-items: center;
   margin-top: 56px;
-  @media(max-width: 768px){
+  @media (max-width: 768px) {
     margin-top: 0;
   }
 }
@@ -23,8 +23,7 @@ span {
   background-color: #318deb;
   width: 80%;
   margin-top: 16px;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
+  border-radius: 16px;
   font-family: raleway;
   span {
     font-weight: bold;
@@ -38,7 +37,7 @@ span {
     border-radius: 16px;
     align-self: center;
     font-weight: bold;
-    @media(max-width: 340px){
+    @media (max-width: 340px) {
       font-size: 12px;
     }
   }
@@ -46,7 +45,7 @@ span {
 
 span {
   width: 80%;
-  background: black;
+  background: #3d3d3d;
   color: white;
   text-align: center;
   margin-top: 32px;
