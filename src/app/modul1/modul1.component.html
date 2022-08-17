@@ -5745,4 +5745,483 @@
       </ul>
     </div>
   </div>
+  <div class="text-container">
+    <span>Was ist Datenschutz?</span>
+  </div>
+  <div class="ps">
+    <img src="assets/img/warning-4-32.png" />
+    <span
+      >PS:Für mehr Details siehe Kursmaterialien /Modul1/Woche7/Tag31/Allgemeine
+      gesetzliche Grundlagen - Teil I
+    </span>
+  </div>
+  <div class="pdf-button">
+    <button (click)="openPdf35()">Open PDF</button>
+    <button (click)="closePdf35()">Close PDF</button>
+  </div>
+  <pdf-viewer
+    *ngIf="show35"
+    [class.show]="show"
+    [src]="pdf23"
+    [render-text]="true"
+    style="display: block"
+    [rotation]="0"
+    [original-size]="false"
+    [show-all]="true"
+    [fit-to-page]="false"
+    [zoom]="1"
+    [zoom-scale]="'page-width'"
+    [stick-to-page]="false"
+    [render-text]="true"
+    [external-link-target]="'blank'"
+    [autoresize]="true"
+    [show-borders]="false"
+    style="width: 100%; height: 600px"
+  ></pdf-viewer>
+  <div class="title">
+    <span
+      >Datenschutz bezeichnet den Schutz des Einzelnen vor dem Missbrauch
+      personenbezogener Daten</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Im Fokus: Daten, die in einem unmittelbaren bzw. mittelbaren Zusammenhang
+      zu einer bestimmten Person stehen Z.B. Name, Adresse,
+      Geburtsdatum,Telefonnummer etc.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Schutz des Persönlichkeitsrechts bei der Datenverarbeitung.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Schutz der eigenen Privatsphäre eines Menschen.</span>
+  </div>
+  <div class="title">
+    <span
+      >Der Datenschutz in Deutschland ist hauptsächlich durch zwei Gesetze
+      geprägt
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Datenschutz-Grundverordnung.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Neues Bundesdatenschutzgesetz.</span>
+  </div>
+  <div class="title">
+    <span
+      >vor der
+      <span [innerHtml]="text69 | highlighter: searchText:'full'"></span> galt
+      in Deutschland das alte Bundesdatenschutzgesetz
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div id="DSGVO" class="info-block">
+      <h3>
+        Inkrafttreten der
+        <span [innerHtml]="text69 | highlighter: searchText:'full'"></span>:
+      </h3>
+      <ul>
+        <li>25.Mai 2018.</li>
+        <li id="BDSG">
+          Zeitgleich trat die neue Verfassung des
+          <span [innerHtml]="text70 | highlighter: searchText:'full'"></span> in
+          Kraft (BDSG-neu).
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>
+        Dient der Vereinheitlichung des Datenschutzrechts innerhalb der EU
+      </h3>
+      <ul>
+        <li>
+          Bisher galten überall verschiedene Datenschutzgesetze und Standards.
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>
+        Das Datenschutzrecht soll datenschutzfreundlicher für die betroffenen
+        Nutzer werden
+      </h3>
+      <ul>
+        <li>Der Bürger erhält Hoheit über seine Daten zurück .</li>
+      </ul>
+    </div>
+  </div>
+  <div class="title">
+    <span
+      >Die Datenschutzverordnung gilt für alle Unternehmen die in der EU
+      ansässig sind
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>
+        Auch außereuropäische Unternehmen müssen sich an die neuen Regelungen
+        halten, wenn sie:
+      </h3>
+      <ul>
+        <li>Eine Niederlassung in der EU haben.</li>
+        <li>Personenbezogene Daten von EU-Bürgern verarbeiten.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="title">
+    <span>Wichtigster Anknüpfungspunkt sind personenbezogene Daten </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>Personenbezogene Daten sind:</h3>
+      <ul>
+        <li>
+          Alle Informationen, die sich auf eine identifizierte oder
+          identifizierbare Person beziehen .
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="text-container">
+    <span>Datenschutzunterschiede </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Deutschland ist in Sachen Datenschutz mit an der Spitze.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Andere Länder und Staaten sind nicht so gut aufgestellt.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >In den USA gibt es auch kein allgemeines und umfassendes
+      Datenschutzgesetz.</span
+    >
+  </div>
+  <div class="text-container">
+    <span>Medizinische Daten und Datenschutz</span>
+  </div>
+  <div class="title">
+    <span>Krankenhäuser als kritische Infrastruktur</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Risiken durch zunehmende IT-Abhängigkeit.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Krankenhäuser mit mehr als 30.000 vollstationären Behandlungsfällen pro
+      Jahr als kritische Anlagen im Bereich der stationären Versorgung.
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Krankenhäuser wichtiger Teil aufgrund der herausragenden Bedeutung für
+      das Wohlergehen der Bevölkerung .</span
+    >
+  </div>
+  <div class="title">
+    <span
+      >Informationen über den gesundheitlichen Zustand gehören zur besonderen
+      Art personenbezogener Daten</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Unterliegen in besonderem Maße dem Datenschutz.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Besonders wichtig: korrekter und sicherer Umgang mit solch sensiblen
+      Informationen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Unterbindung von Missbrauch der sensiblen Informationen.</span>
+  </div>
+  <div class="title">
+    <span
+      >Art. 9
+      <span [innerHtml]="text69 | highlighter: searchText:'full'"></span> -
+      Verarbeitung besonderer Kategorien personenbezogener Daten
+    </span>
+  </div>
+  <div class="img-container">
+    <img src="assets/img/9DSVGO.png" />
+  </div>
+  <div class="title">
+    <span
+      >Die Definition von Gesundheitsdaten ist in Art. 4
+      <span [innerHtml]="text69 | highlighter: searchText:'full'"></span> zu
+      finden
+    </span>
+  </div>
+  <div class="img-container">
+    <img src="assets/img/DSVGO2.png" />
+  </div>
+  <div class="title">
+    <span
+      >Gesundheitsdaten sind extrem persönlich und erfordern höchste
+      Schutzmaßnahmen
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Gesundheitsdaten sind extrem persönlich.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Nur den Betroffenen gehen seine Gesundheitsdaten etwas an.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>Konsequenzen bei Missbrauch:</h3>
+      <ul>
+        <li>Negative Reaktion des sozialen Umfelds.</li>
+        <li>In manchen Kulturen Ausgrenzung aus der Familie.</li>
+        <li>Stigmatisierung bei bestimmten Krankheiten.</li>
+        <li>Konsequenzen im Beruf.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="title">
+    <span
+      >Die Verarbeitung der Daten ist in der
+      <span [innerHtml]="text69 | highlighter: searchText:'full'"></span>
+      geregelt
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>Datenverarbeitung bedeutet:</h3>
+      <ul>
+        <li>Erheben, Erfassen, Organisation, Ordnen,</li>
+        <li>Speicherung,</li>
+        <li>Anpassung oder Veränderung,</li>
+        <li>Auslesen, Abfragen, Verwendung,</li>
+        <li>Offenlegung durch Übermittlung oder Verbreitung,</li>
+        <li>Abgleich oder Verknüpfung, Einschränkung,</li>
+        <li>Löschen oder Vernichtung</li>
+      </ul>
+      <span>von personenbezogenen Daten</span>
+    </div>
+  </div>
+  <div class="title">
+    <span
+      >Die Speicherung von besonderen Arten personenbezogener Daten nur in
+      Ausnahmefällen erlaubt
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Speicherung, Verarbeitung und Nutzung nur in Ausnahmefällen.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Kreis der Befugten ist kleiner als bei anderen Informationen.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Gesundheitsdaten dürfen nur dann erhoben werden, wenn der Betroffene
+      einstimmt oder dies gesetzlich gestattet ist .</span
+    >
+  </div>
+  <div class="title">
+    <span
+      >Die Weitergabe medizinischer Daten an Dritte ist in der Regel nicht
+      zulässig
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Informationen der Ärzte und Krankenhauspersonal unterliegen dem
+      Berufsgeheimnis.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Wahrung der Verschwiegenheitspflicht.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Verstoß ist strafrechtlich relevant.</span>
+  </div>
+  <div class="title">
+    <span
+      >Einrichtungen des Gesundheitswesens müssen eine
+      Datenschutz-Folgenabschätzung durchführen
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>
+        Zu einer Datenschutz-Folgenabschätzung gehören vier Aspekte, die
+        entsprechend dokumentiert und verschriftlicht werden müssen:
+      </h3>
+      <ul>
+        <li>
+          Beschreibung der geplanten Verarbeitungsvorgänge und der Zwecke der
+          Verarbeitung der Gesundheitsdaten.
+        </li>
+        <li>
+          Bewertung der Notwendigkeit und Verhältnismäßigkeit der
+          Verarbeitungsvorgänge.
+        </li>
+        <li>Risikobewertung.</li>
+        <li>Maßnahmenplanung.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="title">
+    <span
+      >Technisch organisatorische Maßnahmen sind bei personenbezogenen Daten
+      wichtig
+    </span>
+  </div>
+  <div id="TOM" class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      ><span [innerHtml]="text71 | highlighter: searchText:'full'"></span> =
+      Technische und organisatorische Maßnahmen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >§ 9 Bundesdatenschutzgesetz (
+      <span [innerHtml]="text70 | highlighter: searchText:'full'"></span> ):
+      Alle Stellen, die personenbezogene Daten verarbeiten, erheben oder nutzen
+      verpflichtet,
+      <span [innerHtml]="text71 | highlighter: searchText:'full'"></span> zu
+      treffen.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Zur Gewährleistung, dass die Sicherheits- und Schutzanforderungen des
+      <span [innerHtml]="text70 | highlighter: searchText:'full'"></span>
+      erfüllt sind.</span
+    >
+  </div>
+  <div class="title">
+    <span
+      >Anlage zu § 9
+      <span [innerHtml]="text70 | highlighter: searchText:'full'"></span>
+      bestimmt die Anforderungen an die
+      <span [innerHtml]="text71 | highlighter: searchText:'full'"></span>s
+    </span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Pseudonymisierung und Verschlüsselung personenbezogener Daten.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Dauerhafte Sicherstellung der Vertraulichkeit, Integrität, Verfügbarkeit
+      und Belastbarkeit der Systeme und Dienste im Zusammenhang mit der
+      Verarbeitung.</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Verfügbarkeit der personenbezogenen Daten.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span
+      >Verfahren zur regelmäßigen Überprüfung, Bewertung und Evaluierung der
+      Wirksamkeit der technischen und organisatorischen Maßnahmen.</span
+    >
+  </div>
+  <div class="title">
+    <span
+      >Verzeichnis nach Art. 30
+      <span [innerHtml]="text69 | highlighter: searchText:'full'"></span> ist
+      das Verzeichnis von Verarbeitungstätigkeiten</span
+    >
+  </div>
+  <div id="Verzeichnisdienst" class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>
+        Ein <span [innerHtml]="text72 | highlighter: searchText:'full'"></span>:
+      </h3>
+      <ul>
+        <li>
+          Stellt in einem Datennetz Informationen über beliebige Objekte in
+          einer definierten Art zur Verfügung.
+        </li>
+        <li>
+          In einem Objekt können zugehörige Attribute gespeichert werden
+          z.B.Namen und Vorname des Benutzers,Personalnummer etc.
+        </li>
+        <li>
+          Verwendung der Daten auf verschiedenen Rechnern und Applikationen.
+        </li>
+        <li>
+          Verwaltung des Verzeichnisdienstes und der Daten von zentraler Stelle.
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="title">
+    <span
+      >Der
+      <span [innerHtml]="text72 | highlighter: searchText:'full'"></span> bietet
+      viele Vorteile</span
+    >
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <span>Erleichterung beim Anlegen und Verwalten der Benutzerkonten.</span>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>Bei Passwortänderung:</h3>
+      <ul>
+        <li>Eine zentrale Änderung .</li>
+      </ul>
+    </div>
+  </div>
+  <div class="more-infos">
+    <img src="assets/img/info-32.png" />
+    <div class="info-block">
+      <h3>Bei Verteilung der Berechtigungen:</h3>
+      <ul>
+        <li>
+          Einrichtung von unterschiedlichen Gruppen (Domäne) mit
+          unterschiedlichen Berechtigungen.
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>

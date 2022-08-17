@@ -41,6 +41,7 @@ export class Modul1Component implements OnInit {
   show32: boolean = false;
   show33: boolean = false;
   show34: boolean = false;
+  show35: boolean = false;
 
   bigImg: boolean = false;
 
@@ -67,6 +68,7 @@ export class Modul1Component implements OnInit {
   pdf20 = 'assets/pdf/Medizinische Bild- und Datenverarbeitung.pdf';
   pdf21 = 'assets/pdf/RIS-PACS-Systeme.pdf';
   pdf22 = 'assets/pdf/Andere IT-Systeme.pdf';
+  pdf23 = 'assets/pdf/Allgemeine gesetzliche Grundlagen - Teil 1.pdf';
 
   title = 'highlight-text';
 
@@ -141,6 +143,10 @@ export class Modul1Component implements OnInit {
   text66 = `ERP`;
   text67 = `LIS`;
   text68 = `AMIce`;
+  text69 = `DSGVO`;
+  text70 = `BDSG`;
+  text71 = `TOM`;
+  text72 = `Verzeichnisdienst`;
 
   searchCollection = [
     this.text2,
@@ -208,6 +214,10 @@ export class Modul1Component implements OnInit {
     this.text66,
     this.text67,
     this.text68,
+    this.text69,
+    this.text70,
+    this.text71,
+    this.text72,
   ];
 
   constructor() {}
@@ -438,5 +448,11 @@ export class Modul1Component implements OnInit {
   }
   closePdf34() {
     this.show34 = false;
+  }
+  openPdf35() {
+    this.show35 = true;
+  }
+  closePdf35() {
+    this.show35 = false;
   }
 }

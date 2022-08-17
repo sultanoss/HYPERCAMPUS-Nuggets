@@ -16,6 +16,9 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { ImprintComponent } from './imprint/imprint.component';
 import { LeagalnoticeComponent } from './leagalnotice/leagalnotice.component';
 
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+
 
 
 @NgModule({
@@ -27,13 +30,17 @@ import { LeagalnoticeComponent } from './leagalnotice/leagalnotice.component';
     HighlighterPipe,
     AbkuerzungenComponent,
     ImprintComponent,
-    LeagalnoticeComponent
+    LeagalnoticeComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    PdfViewerModule
+    PdfViewerModule,
+    MatToolbarModule,
+    MatIconModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
