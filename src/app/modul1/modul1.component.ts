@@ -42,6 +42,7 @@ export class Modul1Component implements OnInit {
   show33: boolean = false;
   show34: boolean = false;
   show35: boolean = false;
+  show36: boolean = false;
 
   bigImg: boolean = false;
 
@@ -69,6 +70,7 @@ export class Modul1Component implements OnInit {
   pdf21 = 'assets/pdf/RIS-PACS-Systeme.pdf';
   pdf22 = 'assets/pdf/Andere IT-Systeme.pdf';
   pdf23 = 'assets/pdf/Allgemeine gesetzliche Grundlagen - Teil 1.pdf';
+  pdf24 = 'assets/pdf/Allgemeine gesetzliche Grundlagen - Teil 2.pdf';
 
   title = 'highlight-text';
 
@@ -454,5 +456,11 @@ export class Modul1Component implements OnInit {
   }
   closePdf35() {
     this.show35 = false;
+  }
+  openPdf36() {
+    this.show36 = true;
+  }
+  closePdf36() {
+    this.show36 = false;
   }
 }
